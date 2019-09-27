@@ -7,7 +7,7 @@
          <meta http-equiv="X-UA-Compatible" content="ie=edge">
          <title>Oakfield Photography</title>
          <link rel="stylesheet" href="style.css">
-         <link href="https://fonts.googleapis.com/css?family=Muli:600&display=swap" rel="stylesheet">  
+         <link href="https://fonts.googleapis.com/css?family=Caveat|Kalam:700|Muli:600|Playball|Radley:400i&display=swap" rel="stylesheet"> 
    </head>
 
    <body>
@@ -26,7 +26,7 @@
                   </ul>
                </nav>
                <!-- NAVIGATION -->
-               <img id="downArrow"  src="./img/whiteArrow.png" alt="">
+               <img onclick="scrollA()" id="downArrow"  src="./img/whiteArrow.png" alt="">
             </header>
             
          </section>
@@ -60,15 +60,9 @@
                   If you contact me I can put together a package that will satisfy both your requirements and budget.
                   </p> 
                </div>
- 
-               <div>
-                  <hr>
-                  <p>We can shoot individuals or small groups in our Newport Photography Studio, or we can travel to any location near you or at your home.  Our portrait sessions can also be booked for evenings and weekends, giving you the flexibility you need.</p>
-                     
-                  <p>We cover Event Photography, normally free of charge, only charging for any images purchased.  In the case of charity events, we will donate 20% of all revenue taken on the day, back to the charity.</p> 
-               </div>
+
             </div>
-            <img id="downArrow-b"  src="./img/blackArrow.png" alt="">
+            <img onclick="scrollB()" id="downArrow-b"  src="./img/blackArrow.png" alt="">
             
          </section>
          <!-- INFO CONTAINER  --> 
@@ -81,19 +75,13 @@
 
             <div class="photographer-bio">
                <img src="./img/stefan.jpg" alt="">
-               <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet laboriosam sed, excepturi magni sequi hic obcaecati, laborum maxime id voluptatem quaerat! Corrupti dicta illum similique in nam perferendis inventore perspiciatis."</p>
+               <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet laboriosam sed, excepturi magni sequi hic obcaecati, laborum maxime id voluptatem quaerat! Corrupti dicta illum similique in nam perferendis inventore perspiciatis.
+                  <span id="extra-bio"> <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet laboriosam sed, excepturi magni sequi hic obcaecati, laborum maxime id voluptatem quaerat! Corrupti dicta illum similique in nam perferendis inventore perspiciatis.lexcepturi magni sequi hic obcaecati, laborum maxime id voluptatem quaerat! Corrupti dicta illum similique in nam perferendis inventore perspiciatis.</span>"
+               </p>
+
             </div>
 
-            <h2 class="get-in-touch-title">Please Get In Touch</h2>
-            <div class="get-in-touch">
-
-               <form action="/action_page.php">
-                  <span>Name:</span>
-                  <input class="textBox" type="text" name="firstname" placeholder="Enter name" ><br>
-                  <span>Email:</span>
-                  <input class="textBox" type="text" name="email" placeholder="Enter email"><br><br>
-                  <input id="submit" type="submit" value="Submit">
-               </form>
+            
             </div>
          </section>
          <!-- BOTTOM SECTION -->
@@ -101,12 +89,18 @@
 
          <!-- FOOTER SECTION -->
          <footer class="footerSection">
-            <div class="footer">
-               <div class="contact-details">
-                  <h4 id="phone"> 01633 546954 || 07845678954 </h4>
-                  <h4 id="email">STEFANEDWARDS1@ME.COM</h4>
-                  <h4 id="facebook">FACEBOOK</h4>
-               </div>
+            <h2>Please Get In Touch</h2>
+            <form action="/action_page.php">
+               <span>Name:</span>
+               <input class="textBox" type="text" name="firstname" placeholder="Enter name" ><br>
+               <span>Email:</span>
+               <input class="textBox" type="text" name="email" placeholder="Enter email"><br><br>
+               <input id="submit" type="submit" value="Submit">
+            </form>
+            <div class="contact-details">
+               <h4 id="phone"> 01633 546954 || 07845678954 </h4>
+               <h4 id="email">STEFANEDWARDS1@ME.COM</h4>
+               <h4 id="facebook">FACEBOOK</h4>
             </div>
          </footer>
          <!-- FOOTER SECTION -->

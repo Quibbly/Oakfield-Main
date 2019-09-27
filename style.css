@@ -7,11 +7,12 @@
 html {
    box-sizing: border-box;
    color: var(--dark);
-   font-family :arial, Helvetica, sans-serif;  
+   font-family: 'Roboto', sans-serif;
+   scroll-behavior: smooth;
 }
 body {
    background:var(--primary);
-   font-family: 'Muli', sans-serif;
+   font-family: 'Roboto', sans-serif;
    line-height: 1.4;
    margin:0;
 }
@@ -22,7 +23,7 @@ img {
    display:grid;
    grid-gap:20px;
    margin: 0 auto;
-   max-width: 100%;  
+   max-width: 100%;
 }
 /* GLOBALS AND RESETS */
 
@@ -35,24 +36,26 @@ img {
    background-repeat: no-repeat;
    background-size: cover;
    box-shadow: 0px 10px 20px grey;
-   height:800px;
-   margin-bottom:20px;
+   height:820px;
+   margin-bottom:px;
    padding-top:20px;
    text-align: center;
-   width:100%; 
+   width:100%;
 }
 .top-container h1{
    box-shadow: 0px 10px 20px grey;
-   font-size: 4.1rem;
+   font-size: 4.0rem;
    margin:0 auto;
-   width:90%;
-   
+   width:100%;
+   font-family: 'Playball', cursive;
+
 }
 /* NAVIGATION */
 .main-nav{
-   box-shadow: 0px 10px 20px grey;
+   box-shadow: 0px 2px 70px grey;
    margin:0 auto;
    width:80%;
+   border-radius: 0px 0px 20px 20px;
 }
 .main-nav ul {
    /* border-bottom: 1px solid var(--dark); */
@@ -79,15 +82,15 @@ img {
 }
 /* NAVIGATION */
 /* DOWN ARROW */
-.top-container img { 
+.top-container img {
    cursor: pointer;
    max-width: 80px;
    position: relative;
-   top:620px;
-   transition: all .2s ease-in-out; 
+   top:610px;
+   transition: all .2s ease-in-out;
 }
 .top-container img:hover {
-   transition: all .2s ease-in-out; 
+   transition: all .2s ease-in-out;
    transform: scale(1.1);
 }
 /* TOP CONTAINER */
@@ -100,16 +103,16 @@ img {
 .info-container h2{
    font-size: 1.7rem;
    max-width:600px;
-   margin-bottom:20px;
+   margin-bottom:10px;
    margin:0 auto;
-   padding-top:20px;
+   padding-top:10px;
    padding-bottom:10px;
 }
 #info-h2-top-hr{
-   margin-top:40px;
+   margin-top:30px;
 }
 #info-h2-bottom-hr{
-   margin-bottom:100px;
+   margin-bottom:30px;
 }
 .info-container .portfolios {
    color: white;
@@ -121,6 +124,7 @@ img {
    padding-left:30px;
    padding-right:30px;
    text-shadow: 2px 3px var(--dark);
+   transition: ease-in-out 0.1s;
 }
 .info-container .portfolios div{
    box-shadow: 5px 4px 20px grey;
@@ -129,10 +133,10 @@ img {
    height:418px;
    margin:0 auto;
    max-width: 400px;
-   opacity: 0.9;
-   text-transform: uppercase; 
+   opacity: 0.8;
+   text-transform: uppercase;
    text-align: center;
-   width:48%; 
+   width:48%;
 }
 .info-container .portfolios div p{
    margin-top:190px;
@@ -161,37 +165,38 @@ img {
    background-repeat: no-repeat;
    border-radius: 2px 2px 10px 2px
 }
+.info-container .portfolios div:hover{
+   transform: scale(1.01);
+   transition: ease-in-out 0.1s;
+   opacity: 1;
+}
 /* INFO TEXT */
 .info-text-container {
    display:flex;
    font-size: 1.2rem;
    grid-gap: 40px;
-   max-width:75%;
+   max-width:80%;
    margin:0 auto;
-   margin-top:60px;
-   margin-bottom:100px; 
+   margin-top:30px;
+   margin-bottom:-30px;
 }
-.info-text-container div:nth-child(1){
+.info-text-container div{
    padding-right:20px;
-   text-align: left;  
-   width:50%;
-}
-.info-text-container div:nth-child(2){
-   padding-left:20px;
    text-align: left;
-   width:50%;
+   width:100%;
 }
+
 /* INFO TEXT */
 /* DOWN ARROW B */
 #downArrow-b{
    cursor: pointer;
    position: relative;
-   top:20px;
+   top:18px;
    transition: all .2s ease-in-out;
-   width:63px;  
+   width:63px;
 }
 #downArrow-b:hover {
-   transition: all .2s ease-in-out; 
+   transition: all .2s ease-in-out;
    transform: scale(1.1);
 }
 /* DOWN ARROW B */
@@ -214,7 +219,7 @@ img {
 }
 .bottom-container .blockQuote h3 {
    color: rgb(255, 255, 255);
-   font-size: 1.9rem;
+   font-size: 1.6rem;
    margin: 0 auto;
    margin-top:20px;
    max-width:60%;
@@ -245,85 +250,124 @@ img {
    width: 300px;
 }
 .photographer-bio p{
-   font-size:1.2rem;
+   font-size:1.4rem;
    margin:0 auto;
    padding-right:50px;
+   font-family: 'Radley', serif;
+   max-height: 310px;
+   overflow: scroll;
+}
+.photographer-bio p #extra-bio{
+   display: none;
 }
 .photographer-bio p:before{
    content:'Stefan Edwards';
    display:block;
    font-size:1.7rem;
-   margin-top:30px;
-   padding-bottom:40px; 
+   margin-top:10px;
+   padding-bottom:40px;
+   font-family: 'Roboto', sans-serif;
+
 }
 /* PHOTOGRAPHER INFO */
 
 
 /* FOOTER */
-.get-in-touch-title {
-   margin-bottom:0px;
-   text-align: center;
-}
-.get-in-touch{
-   background-color: rgba(44, 43, 43, 0.226);
+.footerSection {
+   width:100%;
    box-shadow: 0px 0 20px rgba(80, 80, 80, 0.8);
-   color: white;
+   margin:0 auto;
    display:flex;
-   height:40px;
-   margin-bottom:-20px;
+   background-color: rgba(44, 43, 43, 0.13);
+   color: rgb(70, 70, 70);
+   text-align: center;
+   flex-wrap: wrap;
+   margin-top:auto;
+}
+.footerSection h2{
+   width:100%;
+   margin:0 auto;
+   margin-bottom:20px;
+   margin-top:10px;
+}
+.footerSection form{
    text-align: center;
    width:100%;
-}
-.get-in-touch form{
-   color:rgb(100, 100, 100);
-   display:flex;
    margin:0 auto;
-   padding-left:20%;
-   padding-right:20%; 
-}
-.get-in-touch form .textBox{
+   display:flex;
+   height:20px;
+   justify-content: center;
    opacity: 0.7;
 }
-.get-in-touch form span{
-   padding-top:9px;
-   padding-right:10px;
-   padding-left:10px;
+.footerSection form span{
+   margin-right:10px;
+   margin-left:10px;
 }
-.get-in-touch form #submit{
+.footerSection form #submit{
    background-color: rgb(62, 65, 64);
    border: none;
    cursor: pointer;
    color: rgb(175, 175, 175);
-   font-size: 1em;
+   font-size: 0.8em;
    font-weight: normal;
    margin-left:10px;
    text-transform: uppercase;
-   width:100px; 
+   width:100px;
 }
-.contact-details {
-   background-color: rgb(0, 0, 0);
-   color: white;
-   display:flex;
-   font-size: 0.7rem;
-   height:50px;
-   justify-content: space-evenly;
-   margin-bottom:-20px;
+.footerSection .contact-details{
    width:100%;
+   margin:0 auto;
+   display: flex;
+   justify-content: center;
+   border-top:1px solid grey;
+   margin-top:10px;
 }
-.footerSection {
-   background-color: rgba(44, 43, 43, 0.226);
-   box-shadow: 0px 0 20px rgba(80, 80, 80, 0.8);
-   color: white;
-   height:50px;
-   margin-top:auto; 
-   opacity: 0.9;
-   width:100%;
+.footerSection .contact-details h4{
+   cursor: pointer;
+   padding-left:20px;
+   padding-right:20px;
 }
 /* FOOTER */
 
+hr {
+   border: 0;
+   height: 1.2px;
+   background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+   background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+   background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+   background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+
 
 /* MEDIA QUERIES */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1100px) {
+/* TOP CONTAINER */
+   .top-container{
+      height:810px;
+   }
+   .main-nav{
+      box-shadow: 0px 2px 70px grey;
+      margin:0 auto;
+      width:50%;
+      border-radius: 0px 0px 20px 20px;
+      opacity: 0.7;
+   }
+   .top-container img {
+      cursor: pointer;
+      max-width: 80px;
+      position: relative;
+      top:610px;
+      transition: all .2s ease-in-out;
+   }
+   .top-container img:hover {
+      transition: all .2s ease-in-out;
+      transform: scale(1.1);
+   }
+   /* TOP CONTAINER */
+
+
+   /* INFO CONTAINER */
    .info-container .portfolios {
       max-width:90%;
 
@@ -337,17 +381,25 @@ img {
    .info-text-container {
       max-width:50%;
    }
+   /* INFO CONTAINER */
+
+   /* BOTTOM CONTAINER */
    .photographer-bio {
-      width:40%;
-      margin-top:110px;
-      margin-bottom:110px;
+      text-align: left;
+      width:80%;
    }
    .photographer-bio p{
-      padding-left:10%;
-      padding-right:10%;
+      margin-right:50px;
+   }
+   .photographer-bio p #extra-bio{
+      display: inline;
+      margin:20px;
+   }
+   .photographer-bio p:before{
 
    }
-
+   .photographer-bio img{
+   }
    .bottom-container .blockQuote h3 {
       font-size: 1.9rem;
       margin-top:120px;
@@ -359,15 +411,23 @@ img {
    .bottom-container .blockQuote h3:after {
       font-size: 3.1rem;
    }
+   /* BOTTOM CONTAINER */
+
+   /* FOOTER */
+
+   /* FOOTER */
+}
+
+@media only screen and (min-width: 1400px) {
+   .photographer-bio {
+      text-align: left;
+      width:60%;
+   }
+   .photographer-bio img{
+      width:400px;
+   }
+   .photographer-bio p{
+      max-height: 420px;
+   }
 }
 /* MEDIA QUERIES */
-
-
-hr { 
-   border: 0; 
-   height: 1.2px; 
-   background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-   background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-   background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-   background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
-}
