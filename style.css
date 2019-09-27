@@ -1,14 +1,18 @@
 
 /* GLOBALS AND RESETS */
+:root {
+   --primary: rgb(252, 253, 246);
+   --dark: rgba(0, 0, 0, 0.616);
+   --light: ;
+}
 html {
    box-sizing: border-box;
    font-family :arial, Helvetica, sans-serif;
-   color: black;
-
+   color: var(--dark);
 }
 
 body {
-   background:white;
+   background:var(--primary);
    margin:0;
    line-height: 1.4;
    font-family: 'Muli', sans-serif;
@@ -40,15 +44,24 @@ img {
    width:100%;
    height:800px;
    padding-top:20px;
+   box-shadow: 0px 10px 20px grey;
+   margin-bottom:20px;
 }
 
 .top-container h1{
-   font-size: 3.1rem;
-   margin:0;
+   font-size: 4.1rem;
+   width:90%;
+   margin:0 auto;
+   box-shadow: 0px 10px 20px grey;
 }
    /* NAVIGATION */
+   .main-nav{
+      box-shadow: 0px 10px 20px grey;
+      width:80%;
+      margin:0 auto;
+   }
    .main-nav ul {
-      border-bottom: 1px solid black;
+      /* border-bottom: 1px solid var(--dark); */
       display:grid;
       grid-gap:10px;
       grid-template-columns: repeat(4, 1fr);
@@ -57,12 +70,13 @@ img {
       max-width:500px;
       padding:0;
    }
+   
    .main-nav a {
       display:block;
       text-decoration: none;
       margin:0.8rem;
       text-align: center;
-      color: black;
+      color: var(--dark);
       text-transform: uppercase;
       font-size:1.1rem;
       box-shadow:black;
@@ -75,7 +89,7 @@ img {
    .top-container img { 
       max-width: 80px;
       position: relative;
-      top:590px;
+      top:610px;
       transition: all .2s ease-in-out; 
       cursor: pointer;
    }
@@ -95,8 +109,8 @@ img {
    max-width:600px;
    font-size: 1.7rem;
    margin:0 auto;
-   border-top:1px solid black;
-   border-bottom:1px solid black;
+   border-top:1px solid var(--dark);
+   border-bottom:1px solid var(--dark);
    padding-top:20px;
    padding-bottom:20px;
    margin-bottom:20px;
@@ -106,14 +120,49 @@ img {
    margin:0 auto;
    max-width:100%;
    flex-wrap: wrap;
-   grid-gap:4px;
+   grid-gap:20px;
    padding-left:30px;
    padding-right:30px;
+   color: white;
+   text-shadow: 2px 3px var(--dark);
 }
-.info-container .portfolios img{
+.info-container .portfolios div{
    margin:0 auto;
-   width:49%;
-   border-radius: 10px;
+   width:48%;
+   height:418px;
+   box-shadow: 5px 4px 20px grey;
+   text-transform: uppercase;
+   font-size: 1.5rem;
+   text-align: center;
+   max-width: 400px;
+   cursor: pointer;
+}
+.info-container .portfolios div p{
+   margin-top:190px;
+}
+.info-container .portfolios div:nth-child(1){
+   background: url(./img/wedding.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-radius: 10px 2px 2px 2px
+}
+.info-container .portfolios div:nth-child(2){
+   background: url(./img/child.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-radius: 2px 10px 2px 2px
+}
+.info-container .portfolios div:nth-child(3){
+   background: url(./img/special.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-radius: 2px 2px 2px 10px
+}
+.info-container .portfolios div:nth-child(4){
+   background: url(./img/headshot.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-radius: 2px 2px 10px 2px
 }
 
    /* INFO TEXT */
@@ -128,38 +177,113 @@ img {
    }
    .info-text-container div:nth-child(1){
       text-align: left;
-      border-right:1px solid black;
-      border-top:1px solid black;
+      border-right:1px solid var(--dark);
+      border-top:1px solid var(--dark);
       padding-right:20px;
       width:50%;
    }
    .info-text-container div:nth-child(2){
       text-align: left;
-      border-left:1px solid black;
-      border-top:1px solid black;
+      border-left:1px solid var(--dark);
+      border-top:1px solid var(--dark);
       padding-left:20px;
       width:50%;
    }
    /* INFO TEXT */
+
+   /* DOWN ARROW B */
+   #downArrow-b{
+      width:70px;
+      transition: all .2s ease-in-out; 
+      cursor: pointer;
+   }
+
+   #downArrow-b:hover {
+      transition: all .2s ease-in-out; 
+      transform: scale(1.1);
+   }
+   
+   
+
+   /* DOWN ARROW B */
 /* INFO CONTAINER */
 
 
 
 /* BOTTOM CONTAINER */
-.bottom-container{
+.bottom-container .blockQuote {
    background:url(./img/widescreen.jpg);
+   text-align: center;
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-   text-align: center;
    width:100%;
-   height:800px;
+   height:400px;
    padding-top:20px;
+   margin-bottom:0;
 }
+.bottom-container .blockQuote h3 {
+   color: rgb(255, 255, 255);
+   text-shadow: 2px 3px var(--dark);
+   font-size: 1.9rem;
+   margin: 0 auto;
+   margin-top:20px;
+   max-width:60%;
+}
+.bottom-container .blockQuote h3:before {
+   font-size: 3.1rem;
+   content: '"';
+}
+.bottom-container .blockQuote h3:after {
+   font-size: 3.1rem;
+   content: '"';
+}
+   /* PHOTOGRAPHER INFO */
+   .photographer-bio {
+      width:100%;
+      text-align: center;
+      margin: 0 auto;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top:50px;
+   }
+   .photographer-bio h3{
+      width:100%;
+      display:block;
+      font-size: 2rem;
+   }
+   .photographer-bio img{
+      margin: 0 auto;
+      width: 300px;
+      border-radius: 10px;
+      margin-bottom:30px;
+
+   }
+   .photographer-bio p{
+      font-size:1.2rem;
+      padding-right:50px;
+      margin:0 auto;
+   }
+   .photographer-bio p:before{
+      content:'Stefan Edwards';
+      display:block;
+      padding-bottom:40px;
+      font-size:1.7rem;
+   }
+   /* PHOTOGRAPHER INFO */
 
 
 
+/* FOOTER */
+.footerSection {
+   margin-top:auto; 
+   height:50px;
+   width:100%;
+   background-color: rgb(179, 179, 179);
+   opacity: 0.9;
+}
+/* FOOTER */
 
 
 
@@ -173,11 +297,33 @@ img {
    .info-container .portfolios {
       max-width:80%;
    }
-   .info-container .portfolios img{
-      width:20%;
+   .info-container .portfolios div{
+      width:40%;
    }
    .info-text-container {
       max-width:50%;
+   }
+   .photographer-bio {
+      width:40%;
+      margin-top:110px;
+      margin-bottom:110px;
+   }
+   .photographer-bio p{
+      padding-left:10%;
+      padding-right:10%;
+
+   }
+
+   .bottom-container .blockQuote h3 {
+      font-size: 1.9rem;
+      margin-top:120px;
+      max-width:60%;
+   }
+   .bottom-container .blockQuote h3:before {
+      font-size: 3.1rem;
+   }
+   .bottom-container .blockQuote h3:after {
+      font-size: 3.1rem;
    }
 }
 /* MEDIA QUERIES */
