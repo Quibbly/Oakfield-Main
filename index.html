@@ -19,12 +19,11 @@
                <!-- NAVIGATION -->
                <nav class="main-nav">
                   <ul>
-                     <li> <a href="#home">HOME</a></li>
+                     <li> <a href="index.html">HOME</a></li>
                      <li> <a href="#home">PORTFOLIO</a></li>
                      <li> <a href="#about">INFO</a></li>
                      <li> <a href="#about">CONTACT</a></li>
                   </ul>
-                  
                </nav>
                <!-- NAVIGATION -->
                <img id="downArrow"  src="./img/whiteArrow.png" alt="">
@@ -35,9 +34,11 @@
 
          <!-- INFO CONTAINER  -->
          <section class="info-container">
+            <hr id="info-h2-top-hr">
             <h2> 
                SOUTH WALES FAMILY PHOTOGRAPHER 
             </h2>
+            <hr id="info-h2-bottom-hr">
 
             <div class="portfolios">
                <div><p>Wedding Photography</p></div>
@@ -52,14 +53,16 @@
 
             <div class="info-text-container">
                <div>
+                  <hr>
                   <p>Our style of Wedding Photography makes every effort not to interfere with the normal flow of your day, adopting a more Photo-journalistic approach as much as possible.</p>
                   
                   <p>We do several Newborn Baby Photography packages to suit every need and our sessions are stress-free and arranged to allow for your busy working day.
                   If you contact me I can put together a package that will satisfy both your requirements and budget.
                   </p> 
                </div>
-
+ 
                <div>
+                  <hr>
                   <p>We can shoot individuals or small groups in our Newport Photography Studio, or we can travel to any location near you or at your home.  Our portrait sessions can also be booked for evenings and weekends, giving you the flexibility you need.</p>
                      
                   <p>We cover Event Photography, normally free of charge, only charging for any images purchased.  In the case of charity events, we will donate 20% of all revenue taken on the day, back to the charity.</p> 
@@ -70,6 +73,7 @@
          </section>
          <!-- INFO CONTAINER  --> 
          
+         <!-- BOTTOM SECTION -->
          <section class="bottom-container">
             <div class="blockQuote">
                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam maxime quia consectetur atque reprehenderit inventore. Eveniet adipisci commodi placeat, ea odit atque eum reprehenderit!</h3>
@@ -79,16 +83,33 @@
                <img src="./img/stefan.jpg" alt="">
                <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet laboriosam sed, excepturi magni sequi hic obcaecati, laborum maxime id voluptatem quaerat! Corrupti dicta illum similique in nam perferendis inventore perspiciatis."</p>
             </div>
+
+            <h2 class="get-in-touch-title">Please Get In Touch</h2>
+            <div class="get-in-touch">
+
+               <form action="/action_page.php">
+                  <span>Name:</span>
+                  <input class="textBox" type="text" name="firstname" placeholder="Enter name" ><br>
+                  <span>Email:</span>
+                  <input class="textBox" type="text" name="email" placeholder="Enter email"><br><br>
+                  <input id="submit" type="submit" value="Submit">
+               </form>
+            </div>
          </section>
-
-      <footer class="footerSection">
-         <div class="footer">
-         </div>
-      </footer>
+         <!-- BOTTOM SECTION -->
 
 
-
-
+         <!-- FOOTER SECTION -->
+         <footer class="footerSection">
+            <div class="footer">
+               <div class="contact-details">
+                  <h4 id="phone"> 01633 546954 || 07845678954 </h4>
+                  <h4 id="email">STEFANEDWARDS1@ME.COM</h4>
+                  <h4 id="facebook">FACEBOOK</h4>
+               </div>
+            </div>
+         </footer>
+         <!-- FOOTER SECTION -->
       </div>
       <!-- WRAPPER ENDS  -->
       <script src="script.js"></script>
