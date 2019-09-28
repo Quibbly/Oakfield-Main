@@ -11,7 +11,7 @@ html {
    scroll-behavior: smooth;
 }
 body {
-   background:var(--light);
+   background:var(--primary);
    font-family: 'Roboto', sans-serif;
    line-height: 1.4;
    margin:0;
@@ -350,9 +350,7 @@ hr {
    .top-container img {
       top:650px;
    }
-   .top-container img:hover {
 
-   }
    /* DOWN BUTTON A */
    /* TOP CONTAINER */
 
@@ -453,3 +451,96 @@ hr {
    
 }
 /* MEDIA QUERIES */
+
+
+
+@media only screen and (max-width:700px) {
+   .main-nav{
+      width:100%;
+   }
+   .main-nav ul {
+      max-width:100%;
+   }
+   .main-nav a {
+      font-size:0.8rem;
+   }
+   .main-nav li:nth-child(3){
+      width:150px;
+   }
+
+
+   .info-container h2{
+      font-size: 1.3rem;
+      max-width:500px;
+   }
+   #info-h2-top-hr{
+      margin-top:5px;
+   }
+   #info-h2-bottom-hr{
+      margin-bottom:20px;
+   }
+   .info-container .portfolios {
+      grid-gap:0px;
+      margin:0 auto;
+      max-width:100%;
+      padding-left:0px;
+      padding-right:0px;
+   }
+   .info-container .portfolios div{
+      cursor: auto;
+      font-size: 1.5rem;
+      height:318px;
+      margin:0 auto;
+      max-width: 100%;
+      opacity: 0.9;
+      width:50%;
+   }
+   .info-container .portfolios div p{
+      margin-top:40%;
+   }
+   .info-container .portfolios div:nth-child(1){
+      border-radius: 0px;
+   }
+   .info-container .portfolios div:nth-child(2){
+      border-radius: 0px;
+   }
+   .info-container .portfolios div:nth-child(3){
+      border-radius: 0px;
+   }
+   .info-container .portfolios div:nth-child(4){
+      border-radius: 0px;
+   }
+   /* INFO TEXT */
+   .info-text-container {
+      display:flex;
+      font-size: 1.4rem;
+      grid-gap: 40px;
+      max-width:90%;
+      margin-top:30px;
+      margin-bottom:20px;
+   }
+   #info-text-hr{
+      display:none;
+   }
+   .info-text-container div{
+      padding-right:0px;
+      text-align: center;
+      width:100%;
+   }
+   #info-text-extra{
+      display:none;
+   }
+   .bottom-container .blockQuote {
+      background:url(../img/widescreen.jpg);
+      background-attachment: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: 0px 0 20px rgba(109, 109, 109, 0.514);
+   }
+   .gallery {
+      width:100%;
+      margin-bottom:-25px;
+      margin-top:0px;
+   }
+}
