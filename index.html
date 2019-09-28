@@ -8,6 +8,7 @@
       <title>Oakfield Photography</title>
       <link rel="stylesheet" href="../CSS/style.css">
       <link href="https://fonts.googleapis.com/css?family=Caveat|Kalam:700|Muli:600|Playball|Radley:400i&display=swap" rel="stylesheet"> 
+      <link rel="stylesheet" href="../CSS/simplelightbox.min.css">
    </head>
 
    <body>
@@ -77,7 +78,7 @@
          <!-- BOTTOM SECTION -->
          <section class="bottom-container">
             <div class="blockQuote">
-               <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam maxime quia consectetur atque reprehenderit inventore. Eveniet adipisci commodi placeat, ea odit atque eum reprehenderit!</h3>
+               <h3>LOVE AND LAUGHTER</h3>
             </div>
 
             <div class="photographer-bio">
@@ -86,13 +87,16 @@
                   <span id="extra-bio"> <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet laboriosam sed, excepturi magni sequi hic obcaecati, laborum maxime id voluptatem quaerat! Corrupti dicta illum similique in nam perferendis inventore perspiciatis.lexcepturi magni sequi hic obcaecati, laborum maxime id voluptatem quaerat! Corrupti dicta illum similique in nam perferendis inventore perspiciatis.</span>"
                </p>
 
-            </div>
-
-            
-            </div>
          </section>
          <!-- BOTTOM SECTION -->
 
+         <div class="image-gall-a gallery">
+            <a href="../img/small-port/1.jpeg" class="big"><img src="../img/small-port/1.jpeg" alt=""/></a>
+            <a href="../img/small-port/2.jpeg" class="big"> <img src="../img/small-port/2.jpeg" alt=""/> </a>
+            <a href="../img/small-port/3.jpeg" class="big"> <img src="../img/small-port/3.jpeg" alt=""/> </a>
+            <a href="../img/small-port/4.jpeg" class="big"> <img src="../img/small-port/4.jpeg" alt=""/> </a>
+            <a href="../img/small-port/5.jpeg" class="big"> <img src="../img/small-port/5.jpeg" alt=""/> </a>
+         </div>
 
          <!-- FOOTER SECTION -->
          <footer class="footerSection">
@@ -105,6 +109,16 @@
          <!-- FOOTER SECTION -->
       </div>
       <!-- WRAPPER ENDS  -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+      </script>
+      <script src="../Javascript/simple-lightbox.min.js"></script>
+      <script>
+         $(function() {
+            const $gallery = $('.gallery a').simpleLightbox();
+         });
+      </script> 
       <script src="../Javascript/script.js"></script>
    </body>
 </html>
