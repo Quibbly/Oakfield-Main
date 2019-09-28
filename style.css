@@ -37,7 +37,6 @@ img {
    background-size: cover;
    box-shadow: 0px 10px 20px grey;
    height:820px;
-   margin-bottom:px;
    padding-top:20px;
    text-align: center;
    width:100%;
@@ -77,6 +76,11 @@ img {
    text-align: center;
    text-transform: uppercase;
 }
+.main-nav li:nth-child(1){
+   background-color: rgba(138, 138, 138, 0.466);
+}
+
+
 .main-nav a:hover {
    text-decoration:underline;
 }
@@ -185,6 +189,9 @@ img {
    text-align: left;
    width:100%;
 }
+#info-text-extra{
+   display:none;
+}
 
 /* INFO TEXT */
 /* DOWN ARROW B */
@@ -278,49 +285,17 @@ img {
    box-shadow: 0px 0 20px rgba(80, 80, 80, 0.8);
    margin:0 auto;
    display:flex;
-   background-color: rgba(44, 43, 43, 0.13);
    color: rgb(70, 70, 70);
    text-align: center;
    flex-wrap: wrap;
    margin-top:auto;
 }
-.footerSection h2{
-   width:100%;
-   margin:0 auto;
-   margin-bottom:20px;
-   margin-top:10px;
-}
-.footerSection form{
-   text-align: center;
-   width:100%;
-   margin:0 auto;
-   display:flex;
-   height:20px;
-   justify-content: center;
-   opacity: 0.7;
-}
-.footerSection form span{
-   margin-right:10px;
-   margin-left:10px;
-}
-.footerSection form #submit{
-   background-color: rgb(62, 65, 64);
-   border: none;
-   cursor: pointer;
-   color: rgb(175, 175, 175);
-   font-size: 0.8em;
-   font-weight: normal;
-   margin-left:10px;
-   text-transform: uppercase;
-   width:100px;
-}
+
 .footerSection .contact-details{
    width:100%;
    margin:0 auto;
    display: flex;
    justify-content: center;
-   border-top:1px solid grey;
-   margin-top:10px;
 }
 .footerSection .contact-details h4{
    cursor: pointer;
@@ -340,46 +315,53 @@ hr {
 
 
 
+
+
+
+
+
 /* MEDIA QUERIES */
 @media only screen and (min-width: 1100px) {
 /* TOP CONTAINER */
    .top-container{
-      height:810px;
+      height:846px;
    }
    .main-nav{
-      box-shadow: 0px 2px 70px grey;
-      margin:0 auto;
       width:50%;
-      border-radius: 0px 0px 20px 20px;
-      opacity: 0.7;
    }
+   /* DOWN BUTTON A */
    .top-container img {
-      cursor: pointer;
-      max-width: 80px;
-      position: relative;
-      top:610px;
-      transition: all .2s ease-in-out;
+      top:650px;
    }
    .top-container img:hover {
-      transition: all .2s ease-in-out;
-      transform: scale(1.1);
+
    }
+   /* DOWN BUTTON A */
    /* TOP CONTAINER */
 
 
    /* INFO CONTAINER */
-   .info-container .portfolios {
-      max-width:90%;
-
+   #info-h2-top-hr{
+      margin-top:20px;
+   }
+   #info-h2-bottom-hr{
+      margin-bottom:50px;
    }
    .info-container h2{
-      margin-bottom:20px;
+      margin-bottom:15px;
+   }
+   .info-container .portfolios {
+      max-width:80%;
    }
    .info-container .portfolios div{
-      width:40%;
+      width:20%;
    }
    .info-text-container {
-      max-width:50%;
+      max-width:70%;
+   }
+   #info-text-extra{
+      display:block;
+      margin-bottom:40px;
    }
    /* INFO CONTAINER */
 
@@ -411,10 +393,13 @@ hr {
    .bottom-container .blockQuote h3:after {
       font-size: 3.1rem;
    }
+   
    /* BOTTOM CONTAINER */
 
    /* FOOTER */
-
+   .footerSection .contact-details h4 {
+      font-size: 0.9rem;
+   }
    /* FOOTER */
 }
 
@@ -429,5 +414,15 @@ hr {
    .photographer-bio p{
       max-height: 420px;
    }
+   .info-text-container {
+      max-width:55%;
+   }
+   .info-container .portfolios {
+
+   }
+   #downArrow-b{
+      display:none;
+   }
+   
 }
 /* MEDIA QUERIES */
