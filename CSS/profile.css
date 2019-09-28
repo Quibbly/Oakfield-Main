@@ -104,7 +104,7 @@ img {
    position: relative;
    right:5px;
    margin:0 auto;
-   max-width: 700px;
+   max-width: 500px;
    border-bottom:1px solid rgba(0, 0, 0, 0.527);
    padding-bottom:20px;
 }
@@ -118,7 +118,7 @@ img {
    position: relative;
    right:5px;
    margin:0 auto;
-   max-width: 700px;
+   max-width: 500px;
    padding-bottom:20px;
    border-bottom:1px solid rgba(0, 0, 0, 0.514);
 }
@@ -179,6 +179,12 @@ img {
    }
    .footerSection {
       font-size: 0.69rem;
+   }
+   .info-container .info-container-a p{
+      max-width: 700px;
+   }
+   .info-container .info-container-b p{
+      max-width: 700px;
    }
 }
 /* MEDIA QUERIES */

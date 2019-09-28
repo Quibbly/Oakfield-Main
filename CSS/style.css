@@ -236,11 +236,11 @@ img {
 }
 .bottom-container .blockQuote h3 {
    color: rgb(255, 255, 255);
-   font-size: 1.6rem;
+   font-size: 2.1rem;
    margin: 0 auto;
-   margin-top:20px;
-   max-width:60%;
-   text-shadow: 2px 3px var(--dark);
+   margin-top:30%;
+   max-width:80%;
+   text-shadow: 1px 1px var(--dark);
 }
 
 /* PHOTOGRAPHER INFO */
