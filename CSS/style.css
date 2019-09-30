@@ -26,7 +26,7 @@ img {
    grid-gap:20px;
    margin: 0 auto;
    max-width: 100%;
-   margin-top:-37px;
+   margin-top:-47px;
    background:var(--primary);
 }
 hr {
@@ -87,12 +87,12 @@ header {
 }
 .top-container h1{
    position: relative;
-   top:-840px;
+   top:-820px;
    font-size: 2.9rem;
    margin:0 auto;
    max-width: 70%;
    font-family: 'Playball', cursive;
-   margin-top:50px;
+   margin-top:30px;
    color: var(--dark);
 }
 .top-container img {
@@ -163,7 +163,7 @@ header {
    top:90px;
    display: flex;
 }
-#border-test-int {
+#mobile-link-circle {
    background-color: var(--dark);
    width:140px;
    height:140px;
@@ -176,30 +176,34 @@ header {
 }
 
 .port-link {
-   height:200px;
+   height:400px;
    width:90%;
    display: flex;
    margin:0 auto;  
 }
 .port-link1 {
-   background: url('../img/small-port/1.jpeg');
+   background: url('../img/headerTwo.jpg');
    background-repeat: no-repeat;
    background-size: cover;
+   background-position:center top;
 }
 .port-link2 {
-   background: url('../img/child.jpg'); 
+   background: url('../img/boy-child.jpg'); 
    background-repeat: no-repeat;
    background-size: cover;
+   background-position:center;
 }
 .port-link3 {
-   background: url('../img/headshot.jpg');
+   background: url('../img/headshotTwo.jpg');
    background-repeat: no-repeat;
    background-size: cover;
+   background-position: center; 
 }
 .port-link4 {
-   background: url('../img/special.jpg');
+   background: url('../img/specialTwo.jpg');
    background-repeat: no-repeat;
    background-size: cover;
+   background-position:center top;
 }
 
 #port-link-info{
@@ -207,10 +211,13 @@ header {
    height:130px;
    width:100%;
    position: relative;
-   top:200px;
+   top:400px;
 }
 #port-link-info p{
    color: var(--primary);
+   max-width: 80%;
+   margin:0 auto;
+   margin-top:20px;
 }
 
 .mobile-link h4 {
@@ -224,70 +231,50 @@ header {
    font-size: 1.3rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.info-container .portfolios {
-   color: white;
-   display:flex;
-   flex-wrap: wrap;
+#info-text {
+   width:90%;
    margin:0 auto;
-   max-width:100%;
-   text-shadow: 2px 3px var(--dark);
 }
-.info-container .portfolios div{
-   cursor: pointer;
-   font-size: 1.5rem;
-   height:318px;
-   opacity: 0.9;
-   text-transform: uppercase;
-   text-align: center;
-   width:100%;
-   margin:0 4%;
+
+.image-gall-a {
+   display:grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap:0px;
+   margin:0 auto;
+   width:90%;
+   margin-bottom:60px;
 }
-.info-container .portfolios div p{
-   margin-top:37%;
+
+.image-gall-a a{
+  
+   
+   min-height:185px;
 }
-.info-container .portfolios div:nth-child(1){
-   background: url(../img/wedding.jpg);
-   background-size: cover;
-   background-repeat: no-repeat;
-}
-.info-container .portfolios div:nth-child(2){
-   background: url(../img/child.jpg);
-   background-size: cover;
-   background-repeat: no-repeat;
-}
-.info-container .portfolios div:nth-child(3){
-   background: url(../img/special.jpg);
-   background-size: cover;
-   background-repeat: no-repeat;
-}
-.info-container .portfolios div:nth-child(4){
-   background: url(../img/headshot.jpg);
-   background-size: cover;
-   background-repeat: no-repeat;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* FOOTER */
 .footerSection {
+   background-color: var(--dark) ;
    width:100%;
    box-shadow: 0px 0 20px rgba(80, 80, 80, 0.8);
    margin:0 auto;
    display:flex;
-   color: rgb(70, 70, 70);
+   color: var(--primary);
    text-align: center;
    flex-wrap: wrap;
    margin-top:auto;
