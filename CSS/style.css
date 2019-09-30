@@ -94,7 +94,7 @@ header {
 
 .top-container h1{
    position: relative;
-   top:100px;
+   top:60px;
    font-size: 2.9rem;
    margin:0 auto;
    max-width: 100%;
@@ -106,7 +106,7 @@ header {
    cursor: pointer;
    max-width: 80px;
    position: relative;
-   top:540px;
+   top:580px;
    transition: all .2s ease-in-out;
    opacity:0.8;
 }
