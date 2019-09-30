@@ -9,24 +9,66 @@
       <link rel="stylesheet" href="../CSS/style.css">
       <link href="https://fonts.googleapis.com/css?family=Caveat|Kalam:700|Muli:600|Playball|Radley:400i&display=swap" rel="stylesheet"> 
       <link rel="stylesheet" href="../CSS/simplelightbox.min.css">
+      <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+      <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
    </head>
 
    <body>
+      <header>
+         <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+               <ul class="glide__slides">
+                  <li class="glide__slide"></li>
+                  <li class="glide__slide"></li>
+                  <li class="glide__slide"></li>
+               </ul>
+            </div>
+
+            
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+               <button class="glide__bullet" data-glide-dir="=0"></button>
+               <button class="glide__bullet" data-glide-dir="=1"></button>
+               <button class="glide__bullet" data-glide-dir="=2"></button>
+            </div>
+         </div> 
+      </header>
+         
       <div class="wrapper">
+            
+          
          <!-- TOP CONTAINER -->
          <section class="top-container">
             <header>
                <h1>Oakfield Photography</h1>
                <!-- NAVIGATION -->
-               <nav class="main-nav">
-                  <ul>
-                     <li> <a href="index.html">HOME</a></li>
-                     <li> <a href="../portfolio.html">PORTFOLIO</a></li>
-                     <li> <a href="../about.html">ABOUT / CONTACT</a></li>
-                     <li> <a href="../profile.html">PROFILE</a></li>
+               <div id="menuToggle">
+                  <!--
+                  A fake / hidden checkbox is used as click reciever,
+                  so you can use the :checked selector on it.
+                  -->
+                  <input type="checkbox" />
+                  
+                  <!--
+                  Some spans to act as a hamburger.
+                  
+                  They are acting like a real hamburger,
+                  not that McDonalds stuff.
+                  -->
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+                  <!--
+                  Too bad the menu has to be inside of the button
+                  but hey, it's pure CSS magic.
+                  -->
+                  <ul id="menu">
+                    <a href="../index.html"><li>HOME</li></a>
+                    <a href="../portfolio.html"><li>PORTFOLIO</li></a>
+                    <a href="../about.html"><li>ABOUT / CONTACT</li></a>
+                    <a href="../profile.html"><li>PROFILE</li></a>
                   </ul>
-               </nav>
-               <!-- NAVIGATION -->
+               </div>
                <img onclick="scrollA()" id="downArrow"  src="./img/whiteArrow.png" alt="">
             </header>
             
@@ -35,72 +77,94 @@
 
          <!-- INFO CONTAINER  -->
          <section class="info-container">
-            <hr id="info-h2-top-hr">
-            <h2> 
-               SOUTH WALES FAMILY PHOTOGRAPHER 
-            </h2>
-            <hr id="info-h2-bottom-hr">
-
-            <div class="info-text-container">
-               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis sit consequatur dolorem nihil qui ipsam maiores aspernatur saepe facilis nulla. Corrupti cumque qui repellat. Suscipit, perferendis quaerat. Deserunt eum nam odit consequatur excepturi officiis magnam provident neque quas magni eligendi veritatis ab et earum ullam minus commodi dolorem, eius qui!</p>
-            </div>
-
-            <div class="portfolios">
-               <div><p>Wedding Photography</p></div>
-               <div><p>Child & Baby shoots</p></div>
-               <div><p>Speciality Work</p></div>
-               <div><p>Professional Headshots</p></div>
-            </div>
-
-            <div class="info-text-container">
-               <div>
-                  <hr id="info-text-hr">
-                  <p>Our style of Wedding Photography makes every effort not to interfere with the normal flow of your day, adopting a more Photo-journalistic approach as much as possible.</p>
-                  
-                  <p>We do several Newborn Baby Photography packages to suit every need and our sessions are stress-free and arranged to allow for your busy working day.
-                  If you contact me I can put together a package that will satisfy both your requirements and budget.
-                  </p> 
-
-                  <span id="info-text-extra">
-                     <p>
-                        Our style of Wedding Photography makes every effort not to interfere with the normal flow of your day, adopting a more Photo-journalistic approach as much as possible
-                     </p>
-
-                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, ratione corporis, sunt neque voluptatem, ab aut temporibus praesentium nam odit saepe reprehenderit veritatis culpa placeat cumque asperiores architecto aperiam molestias ut suscipit repudiandae eligendi a! Doloremque a tempore id accusantium facere ipsam modi officia fuga iure saepe quam quasi fugiat autem dolore nemo, reiciendis iusto, error asperiores, veniam laudantium!
-                        
-                     </p>
-                  </span>
-               </div>
-
+            <div id="info-header-container">
+               <h2> 
+                  SOUTH WALES FAMILY PHOTOGRAPHER 
+               </h2>
+               <hr id="info-h2-bottom-hr">
+               <hr id="info-h2-bottom-hr-b">
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus voluptas commodi aliquid? Praesentium eos est impedit consequatur dicta soluta obcaecati, quas sequi in blanditiis.</p>
             </div>
             
+
+            <div class="mobile-links-container">
+               <div class="mobile-link">
+                  <div id="mobile-link-img">
+                     <div id="mobile-link-circle"><h4>Weddings</h4></div>
+                  </div> 
+                  <div class="port-link port-link1">
+                     <div id="port-link-info">
+                        <p>
+                           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, molestiae.
+                        </p>
+                     </div>
+                  </div>  
+               </div> 
+
+               <div class="mobile-link">
+                  <div id="mobile-link-img">
+                     <div id="mobile-link-circle"><h4>Children</h4></div> 
+                  </div>
+                  <div class="port-link port-link2">
+                     <div id="port-link-info">
+                        <p>
+                           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, molestiae.
+                        </p>
+                     </div>
+                  </div>  
+               </div> 
+
+               <div class="mobile-link">
+                  <div id="mobile-link-img">
+                     <div id="mobile-link-circle"><h4>Headshots</h4></div> 
+                  </div> 
+                  <div class="port-link port-link3">
+                     <div id="port-link-info">
+                        <p>
+                           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, molestiae.
+                        </p>
+                     </div>
+                  </div>  
+               </div> 
+
+               <div class="mobile-link">
+                  <div id="mobile-link-img">
+                     <div id="mobile-link-circle"><h4>Speciality</h4></div> 
+                  </div> 
+                  <div class="port-link port-link4">
+                     <div id="port-link-info">
+                        <p>
+                           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, molestiae.
+                        </p>
+                     </div>
+                  </div>  
+               </div> 
+            </div>
+            
+            
+            <hr id="info-text-hr-top">
+            <div id="info-text-container">
+               <div id="info-text">
+                  <h3>A little bit about us..</h3>
+                  <p>
+                     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit saepe veniam architecto libero perspiciatis quidem animi, totam sapiente. Deleniti tempore iste soluta ex debitis sed praesentium, ad consequatur laborum ullam. Lorem ipsum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum tempore quas dolorum ratione accusamus harum expedita animi? Neque." 
+                  </p>
+               </div>
+            </div>
+            <hr id="info-text-hr-bottom">
+
+            <div class="image-gall-a gallery">
+               <a href="../img/small-port/1.jpeg" class="big"><img src="../img/small-port/1.jpeg" alt=""/></a>
+               <a href="../img/small-port/2.jpeg" class="big"> <img src="../img/small-port/2.jpeg" alt=""/> </a>
+               <a href="../img/small-port/3.jpeg" class="big"> <img src="../img/small-port/3.jpeg" alt=""/> </a>
+               <a href="../img/small-port/4.jpeg" class="big"> <img src="../img/small-port/4.jpeg" alt=""/> </a>
+               <a href="../img/small-port/5.jpeg" class="big"> <img src="../img/small-port/5.jpeg" alt=""/> </a>
+               <a href="../img/small-port/5.jpeg" class="big"> <img src="../img/small-port/6.jpeg" alt=""/> </a>
+            </div>
+
             
          </section>
          <!-- INFO CONTAINER  --> 
-         
-         <!-- BOTTOM SECTION -->
-         <section class="bottom-container">
-            <div class="blockQuote">
-               <h3>LOVE AND LAUGHTER</h3>
-            </div>
-
-            <div class="photographer-bio">
-               <img src="./img/stefan.jpg" alt="">
-               <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet laboriosam sed, excepturi magni sequi hic obcaecati, laborum maxime id voluptatem quaerat! Corrupti dicta illum similique in nam perferendis inventore perspiciatis.
-                  <span id="extra-bio"> <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet laboriosam sed, excepturi magni sequi hic obcaecati, laborum maxime id voluptatem quaerat! Corrupti dicta illum similique in nam perferendis inventore perspiciatis.lexcepturi magni sequi hic obcaecati, laborum maxime id voluptatem quaerat! Corrupti dicta illum similique in nam perferendis inventore perspiciatis.</span>"
-               </p>
-
-         </section>
-         <!-- BOTTOM SECTION -->
-
-         <div class="image-gall-a gallery">
-            <a href="../img/small-port/1.jpeg" class="big"><img src="../img/small-port/1.jpeg" alt=""/></a>
-            <a href="../img/small-port/2.jpeg" class="big"> <img src="../img/small-port/2.jpeg" alt=""/> </a>
-            <a href="../img/small-port/3.jpeg" class="big"> <img src="../img/small-port/3.jpeg" alt=""/> </a>
-            <a href="../img/small-port/4.jpeg" class="big"> <img src="../img/small-port/4.jpeg" alt=""/> </a>
-            <a href="../img/small-port/5.jpeg" class="big"> <img src="../img/small-port/5.jpeg" alt=""/> </a>
-         </div>
 
          <!-- FOOTER SECTION -->
          <footer class="footerSection">
@@ -113,6 +177,7 @@
          <!-- FOOTER SECTION -->
       </div>
       <!-- WRAPPER ENDS  -->
+      
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous">
@@ -124,5 +189,11 @@
          });
       </script> 
       <script src="../Javascript/script.js"></script>
+      <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+      <script>
+         new Glide('.glide').mount()
+
+         
+      </script>
    </body>
 </html>
