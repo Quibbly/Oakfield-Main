@@ -75,7 +75,7 @@ header {
 
 .glide .glide__bullets {
    position: relative;
-   top:-240px;
+   top:-220px;
 }
 
 
@@ -85,8 +85,23 @@ header {
    text-align: center;
    width:100%;
 }
-
 .top-container h1{
+   position: relative;
+   top:-820px;
+   font-size: 2.9rem;
+   margin:0 auto;
+   max-width: 100%;
+   font-family: 'Playball', cursive;
+   margin-top:60px;
+
+}
+.top-container img {
+   cursor: pointer;
+   max-width: 80px;
+   position: relative;
+   top:-380px;
+}
+/* .top-container h1{
    position: relative;
    top:60px;
    font-size: 2.9rem;
@@ -103,7 +118,7 @@ header {
    top:350px;
    transition: all .2s ease-in-out;
    opacity:0.8;
-}
+} */
 .top-container img:hover {
    transition: all .2s ease-in-out;
    transform: scale(1.1);
