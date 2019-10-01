@@ -25,6 +25,7 @@ img {
    margin: 0 auto;
    max-width: 100%;
    margin-top:-47px;
+   text-align:center;
 }
 hr {
    border: 0;
@@ -69,16 +70,16 @@ header {
 /* MAIN SECTION - DOWN*/
 #box-shadow-wrap {
    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
+   
 }
 .info-container {
    text-align: center;
-   margin-top:80px;
+   margin-top:30px;
 }
 .info-container h2{
    font-size: 1.5rem;
    max-width:95%;
    margin:0 auto;
-   
 }
 #info-text-hr-top{
    padding-bottom:-40px;
@@ -87,17 +88,26 @@ header {
 }
 #info-text-hr-bot{
    width:60%;
-
+}
+#info-text-hr-top-b {
+   width:60%;
+   margin-bottom:-50px;
+}
+#info-text-hr-bot-b {
+   width:60%;
+   margin-bottom:-20px;
 }
 .gallery {
    display:flex;
    flex-wrap:wrap;
    width:90%;
    margin: 0 auto;
+   max-width: 1200px;
 }
-
 .gallery a {
    width:100%;
+   margin:0 auto;
+   max-width: 400px;;
 }
 .info-text {
    width:80%;
@@ -107,7 +117,17 @@ header {
 }
 /* MAIN SECTION - UP*/
 
-
+/* WHERE TO FIND US SECTION - DOWN */
+#h2-b {
+   margin-bottom:-20px;
+}
+iframe {
+   height:400px;
+   width:95%;
+   margin:0 auto;
+   max-width: 1200px;
+}
+/* WHERE TO FIND US SECTION - UP */
 
 /* FOOTER - DOWN*/
 .footerSection {
@@ -267,18 +287,22 @@ a:hover{
       text-decoration:underline;
    }
    /* DESKTOP ONLY NAV - UP */
-   
-   .info-container h2{
-      color: var(--dark);
-      font-style: italic;
-      font-size: 1.5rem;
-      max-width:95%;
-      margin-bottom:5px;
-      margin:0 auto;
-      margin-top:110px;
-      padding-top:15px;
-      padding-bottom:10px;  
+   .gallery a{
+      width:30%;
    }
-   
+   .info-text {
+      width:70%;
+      max-width:700px;
+   }
+   hr {
+      max-width: 600px;
+   }
+
 }
 /* MEDIA QUERIES - UP */
+
+@media only screen and (min-width:900px) {
+   iframe {
+      height:700px;
+   }
+}
