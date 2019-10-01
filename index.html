@@ -41,6 +41,14 @@
             <header>
                <h1>Oakfield Photography</h1>
                <!-- NAVIGATION -->
+               <nav class="main-nav">
+                  <ul>
+                     <li> <a href="./index.html">HOME</a></li>
+                     <li> <a href="./portfolio.html">PORTFOLIO</a></li>
+                     <li> <a href="./about.html">ABOUT / CONTACT</a></li>
+                     <li> <a href="./profile.html">PROFILE</a></li>
+                  </ul>
+               </nav>
                <div id="menuToggle">
                   <!--
                   A fake / hidden checkbox is used as click reciever,
@@ -153,6 +161,13 @@
             </div>
             <hr id="info-text-hr-bottom">
 
+            <div class="photographer-bio">
+               <img src="./img/stefan.jpg" alt="">
+               <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet laboriosam sed, excepturi magni sequi hic obcaecati, laborum maxime id voluptatem quaerat! Corrupti dicta illum similique in nam perferendis inventore perspiciatis.
+                  <span id="extra-bio"> <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet laboriosam sed, excepturi magni sequi hic obcaecati, laborum maxime id voluptatem quaerat! Corrupti dicta illum similique in nam perferendis inventore perspiciatis.lexcepturi magni sequi hic obcaecati, laborum maxime id voluptatem quaerat! Corrupti dicta illum similique in nam perferendis inventore perspiciatis.</span>"
+               </p>
+            </div>
+            
             <div class="image-gall-a gallery">
                <a href="./img/small-port/1.jpeg" class="big"><img src="./img/small-port/1.jpeg" alt=""/></a>
                <a href="./img/small-port/2.jpeg" class="big"> <img src="./img/small-port/2.jpeg" alt=""/> </a>
@@ -191,6 +206,7 @@
       <script src="./Javascript/script.js"></script>
       <script src="./Javascript/glide.min.js"></script>
       <script>
+         
          new Glide('.glide').mount()
 
          
