@@ -191,7 +191,7 @@ a:hover{
       /* border-bottom: 1px solid var(--dark); */
       display:grid;
       grid-gap:10px;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       list-style:none;
       margin:0 auto;
       max-width:500px;
@@ -261,6 +261,8 @@ a:hover{
    width:60%;
    display:flex;
    margin:0 auto;
+   margin-bottom:50px;
+   margin-top:50px;
 }
 #sort-buttons button{
    width:30%;
