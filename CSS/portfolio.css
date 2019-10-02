@@ -245,29 +245,31 @@ a:hover{
 #port-gallery div{
    display:flex;
    flex-wrap:wrap;
-   width:90%;
+   width:100%;
    margin: 0 auto;
 }
 
-#port-gallery div img{
-   width:200px;
-   height:200px;
+#port-gallery div a{
+   width:30%;
+   height:;
    margin:0 auto;
 }
+
+
 
 #sort-buttons {
    width:60%;
    display:flex;
    margin:0 auto;
 }
-
 #sort-buttons button{
-   width:200px;
+   width:30%;
    background-color:var(--dark);
    text-decoration: none;
    text-align: center;
    color: var(--light);
    height:50px;
+   margin:auto 0;
 }
 
 
