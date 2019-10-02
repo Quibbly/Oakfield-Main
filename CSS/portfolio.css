@@ -243,16 +243,16 @@ a:hover{
 }
 
 #port-gallery div{
-   display:flex;
-   flex-wrap:wrap;
+   display:grid;
+   grid-template-columns: 1fr 1fr 1fr;
    width:100%;
    margin: 0 auto;
 }
 
 #port-gallery div a{
-   width:30%;
-   height:;
+   width:100%;
    margin:0 auto;
+   margin-top:-6px;
 }
 
 

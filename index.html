@@ -8,7 +8,7 @@
       <title>Oakfield Photography</title>
       <link rel="stylesheet" href="./CSS/style.css">
       <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Caveat|Kalam:700|Muli:600|Playball|Radley:400i&display=swap" > 
-      <link rel="stylesheet" href="./CSS/simplelightbox.min.css">
+      <link rel="stylesheet" href="./CSS/magnific-popup.css">
       <link rel="stylesheet" href="./CSS/glide.core.min.css">
       <link rel="stylesheet" href="./CSS/glide.theme.min.css">
    </head>
@@ -163,15 +163,17 @@
             </div>
 
             <div class="image-gall-a gallery">
-               <a href="./img/small-port/1.jpeg" class="big"><img src="./img/small-port/1.jpeg" alt=""/></a>
-               <a href="./img/small-port/2.jpeg" class="big"> <img src="./img/small-port/2.jpeg" alt=""/> </a>
-               <a href="./img/small-port/3.jpeg" class="big"> <img src="./img/small-port/3.jpeg" alt=""/> </a>
-               <a href="./img/small-port/4.jpeg" class="big"> <img src="./img/small-port/4.jpeg" alt=""/> </a>
-               <a href="./img/small-port/5.jpeg" class="big"> <img src="./img/small-port/5.jpeg" alt=""/> </a>
-               <a href="./img/small-port/5.jpeg" class="big"> <img src="./img/small-port/6.jpeg" alt=""/> </a>
+               <a class="test-popup-link" href="./img/small-port/1.jpeg"><img src="./img/small-port/1.jpeg" alt=""/></a>
+               <a class="test-popup-link" href="./img/small-port/2.jpeg"><img src="./img/small-port/2.jpeg" alt=""/></a>
+               <a class="test-popup-link" href="./img/small-port/3.jpeg"><img src="./img/small-port/3.jpeg" alt=""/></a>
+               <a class="test-popup-link" href="./img/small-port/4.jpeg"><img src="./img/small-port/4.jpeg" alt=""/></a>
+               <a class="test-popup-link" href="./img/small-port/5.jpeg"><img src="./img/small-port/5.jpeg" alt=""/></a>
+               <a class="test-popup-link" href="./img/small-port/6.jpeg"><img src="./img/small-port/6.jpeg" alt=""/></a>
             </div>
 
+
             
+
          </section>
          <!-- INFO CONTAINER  --> 
 
@@ -191,19 +193,37 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous">
       </script>
-      <script src="./Javascript/simple-lightbox.min.js"></script>
-      <script>
-         $(function() {
-            const $gallery = $('.gallery a').simpleLightbox();
-         });
-      </script> 
       <script src="./Javascript/script.js"></script>
       <script src="./Javascript/glide.min.js"></script>
       <script>
-         
          new Glide('.glide').mount()
+      </script>
 
-         
+      <script src="./Javascript/jquery.magnific-popup.min.js"></script>
+      <script>
+         $('.test-popup-link').magnificPopup({
+            type: 'image',
+            // other options
+            gallery: {
+               // options for gallery
+               enabled: true
+            },
+            zoom: {
+               enabled: true, // By default it's false, so don't forget to enable it
+
+               duration: 300, // duration of the effect, in milliseconds
+               easing: 'ease-in-out', // CSS transition easing function
+
+               // The "opener" function should return the element from which popup will be zoomed in
+               // and to which popup will be scaled down
+               // By defailt it looks for an image tag:
+               opener: function(openerElement) {
+                  // openerElement is the element on which popup was initialized, in this case its <a> tag
+                  // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+                  return openerElement.is('img') ? openerElement : openerElement.find('img');
+               }
+            }
+         });
       </script>
    </body>
 </html>
