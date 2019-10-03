@@ -79,6 +79,7 @@ header {
 .info-container h2{
    font-size: 1.5rem;
    width:90%;
+   max-width:700px;
    margin:0 auto;
    background-color: var(--dark);
    color: var(--light);
@@ -86,10 +87,12 @@ header {
 #info-text-hr-top{
    padding-bottom:-40px;
    width:60%;
+   margin-bottom:40px;
 
 }
 #info-text-hr-bot{
    width:60%;
+   margin-bottom:500px;
 }
 #info-text-hr-top-b {
    width:60%;
@@ -98,7 +101,7 @@ header {
 #info-text-hr-bot-b {
    width:60%;
    margin-bottom:-20px;
-}
+} 
 
 .gallery {
    display:flex;
@@ -326,6 +329,9 @@ a:hover{
    }
    .info-text {
       width:70%;
+      max-width:700px;
+   }
+   .info-container-a p{
       max-width:700px;
    }
    hr {

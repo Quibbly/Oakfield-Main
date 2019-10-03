@@ -77,7 +77,7 @@ header {
 .glide .glide__bullets {
    position: relative;
    top:-320px;
-}
+} 
 /* GLIDEJS HEADER - UP*/
 
 .top-container{
@@ -143,6 +143,7 @@ header {
 }
 #info-h2-bottom-hr-b{
    max-width: 80%;
+   
 }
 /* PORTFOLIO LINK CARDS - DOWN */
 .links-container {
@@ -532,6 +533,13 @@ a:hover{
       font-family: 'Roboto', sans-serif;
       margin-top:10px;
       padding-bottom:10px;
+   }
+   #info-text-hr-top{
+      margin-top:40px;
+      margin-bottom:30px;
+   }
+   #info-h2-bottom-hr-b {
+      margin-bottom:40px;
    }
    /* PHOTOGRAPHER INFO - UP */
 }
