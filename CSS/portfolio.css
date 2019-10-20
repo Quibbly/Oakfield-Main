@@ -191,7 +191,7 @@ a:hover{
       /* border-bottom: 1px solid var(--dark); */
       display:grid;
       grid-gap:10px;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(4, 1fr); 
       list-style:none;
       margin:0 auto;
       max-width:500px;
@@ -272,9 +272,14 @@ a:hover{
    color: var(--light);
    height:50px;
    margin:auto 0;
+   cursor: pointer;
+   transition: color 0.3s ease;
+   transition: background-color 0.3s ease;
 }
-
-
+#sort-buttons button:hover{
+   color: var(--dark); 
+   background-color: var(--light);
+}
 
 /* FOOTER - DOWN*/
 .footerSection {

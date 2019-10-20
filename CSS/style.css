@@ -55,6 +55,7 @@ header {
    background-position-x: center;
    width:100%;
    height:800px;
+   
 }
 .glide .glide__track .glide__slides li:nth-child(2){
    background:url(../img/headerTwo.jpg)center;
@@ -125,10 +126,15 @@ header {
 }
 /* TITLE OF MAIN SECTION - DOWN */
 .info-container h2{
-   font-size: 1.1rem;
-   max-width:95%;
-   margin:-460px auto 5px;
+   font-size: 1.2rem;
+   max-width:100%;
+   margin:-460px auto 60px;
    padding:15px 0 10px 0; 
+   background-color:var(--dark);
+   color: var(--light);
+   padding:30px;
+   border-radius:0 0 10px 10px;
+
 }
 /* TITLE OF MAIN SECTION - UP */
 .info-container p {
@@ -195,7 +201,7 @@ header {
    background-position:center;
 }
 .port-link3 {
-   background: url('../img/headshotTwo.jpg');
+   background: url('../img/headshot.jpg');
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center; 
@@ -416,7 +422,7 @@ a:hover{
       /* border-bottom: 1px solid var(--dark); */
       display:grid;
       grid-gap:10px;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       list-style:none;
       margin:0 auto;
       max-width:500px;
@@ -468,15 +474,15 @@ a:hover{
       top:-270px;
    }
    .info-container h2{
-      color: var(--dark);
+      color: var(--light);
       font-style: italic;
       font-size: 1.5rem;
       max-width:95%;
-      margin-bottom:5px;
       margin:0 auto;
+      margin-bottom:150px;
       margin-top:-510px;
       padding-top:75px;
-      padding-bottom:10px;  
+      padding-bottom:50px;  
    }
    .info-container p {
       padding-bottom:70px;
@@ -486,6 +492,10 @@ a:hover{
    }
    #info-text {
       max-width: 600px;
+   }
+   .info-container {
+      text-align: center;
+
    }
    .image-gall-a {
       display:grid;

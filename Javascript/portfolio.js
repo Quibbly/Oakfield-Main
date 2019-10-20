@@ -2,7 +2,7 @@ let portfolioGallery = document.getElementById('port-gallery');
 let wedding = '/wedding/';
 let child = '/child/';
 let special = '/special/';
-let headshot = '/headshot/';
+let headshot = '/headshot/'; 
 
 // SORT BY WEDDING IMAGES
 function galSort(amount, type) {
