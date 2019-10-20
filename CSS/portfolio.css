@@ -101,6 +101,7 @@ header {
    width: 200px;
    -webkit-font-smoothing: antialiased;
    /* to stop flickering of text in safari */
+   border-radius:0  0 20px 0;
 }
 a{
    color: #232323;

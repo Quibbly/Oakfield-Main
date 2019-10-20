@@ -27,20 +27,12 @@ img {
    margin-top:-47px;
    text-align:center;
 }
-hr {
-   border: 0;
-   background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-   background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-   background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-   background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-   height: 1.2px;
-}
+
 header {
    margin:0 auto; 
    margin-top:-20px;
 }
 /* GLOBALS AND RESETS - UP*/
-
 
 
 /* TOP CONTAINER - DOWN*/
@@ -65,133 +57,11 @@ header {
 /* DEKSTOP NAV HIDDEN TILL MEDIA QUERY - UP */
 /* TOP CONTAINER - UP*/
 
-
-
 /* MAIN SECTION - DOWN*/
 #box-shadow-wrap {
    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
    
 }
-.info-container {
-   text-align: center;
-   margin-top:30px;
-}
-.info-container h2{
-   font-size: 1.5rem;
-   width:90%;
-   max-width:700px;
-   margin:0 auto;
-   background-color: var(--dark);
-   color: var(--light);
-}
-#info-text-hr-top{
-   padding-bottom:-40px;
-   width:60%;
-   margin-bottom:40px;
-
-}
-#info-text-hr-bot{
-   width:60%;
-   margin-bottom:500px;
-}
-#info-text-hr-top-b {
-   width:60%;
-   margin-bottom:-50px;
-}
-#info-text-hr-bot-b {
-   width:60%;
-   margin-bottom:-20px;
-} 
-
-.gallery {
-   display:flex;
-   flex-wrap:wrap;
-   margin: 0 auto;
-   max-width: 90%;
-}
-.gallery a {
-   width:100%;
-   margin:0 auto;
-   max-width: 400px;;
-   height:320px;
-   background-color: var(--dark);
-   margin-bottom:10px;
-}
-.gallery img {
-   width:100%;
-}
-.gallery p {
-   color: var(--light);
-   max-width:60%;
-   margin: 0 auto;
-
-}
-
-.info-text {
-   width:70%;
-   margin:0 auto;
-   margin-top:40px;
-   margin-bottom:20px;
-   font-size:1.2rem;
-}
-/* MAIN SECTION - UP*/
-.info-container-a {
-   text-align: center;
-}
-#portrait{
-   width:40%;
-   max-width: 500px;
-   border-radius:900px;
-   margin-bottom:10px;
-   margin:0 auto;
-}
-.info-container-a h2{
-   
-   margin-bottom:10px;
-   font-size: 1.4rem;
-}
-.info-container-a p{
-   position: relative;
-   right:5px;
-   margin:0 auto;
-   max-width: 70%;
-}
-/* WHERE TO FIND US SECTION - DOWN */
-
-iframe {
-   height:400px;
-   width:95%;
-   margin:0 auto;
-   max-width: 1200px;
-}
-/* WHERE TO FIND US SECTION - UP */
-
-/* FOOTER - DOWN*/
-.footerSection {
-   background-color: var(--dark) ;
-   box-shadow: 0px 0 20px rgba(80, 80, 80, 0.8);
-   color: var(--light);
-   display:flex;
-   flex-wrap: wrap;
-   font-size: 0.8rem;
-   margin:0 auto;
-   margin-top:auto;
-   text-align: center;
-   width:100%;
-}
-.footerSection .contact-details{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   margin:0 auto;
-   width:100%;
-}
-.footerSection .contact-details h4{
-   cursor: pointer;
-   width:100%;
-}
-/* FOOTER - UP*/
-
 
 
 /* MOBILE HAMBURGER MENU - DOWN*/
@@ -282,6 +152,10 @@ a:hover{
 
 
 
+
+
+
+
 /* MEDIA QUERIES - DOWN */
 /* MID SIZED DISPLAY */
 @media only screen and (min-width:700px) {
@@ -299,7 +173,7 @@ a:hover{
       /* border-bottom: 1px solid var(--dark); */
       display:grid;
       grid-gap:10px;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, 1fr); 
       list-style:none;
       margin:0 auto;
       max-width:500px;
@@ -316,7 +190,7 @@ a:hover{
       text-transform: uppercase;
       margin-bottom:10px;
    }
-   .main-nav li:nth-child(3){
+   .main-nav li:nth-child(2){
       background-color: rgba(138, 138, 138, 0.466);
     
 
@@ -325,19 +199,6 @@ a:hover{
       text-decoration:underline;
    }
    /* DESKTOP ONLY NAV - UP */
-   .gallery a{
-      width:30%;
-   }
-   .info-text {
-      width:70%;
-      max-width:700px;
-   }
-   .info-container-a p{
-      max-width:700px;
-   }
-   hr {
-      max-width: 600px;
-   }
 
 }
 /* MEDIA QUERIES - UP */
@@ -347,3 +208,29 @@ a:hover{
       height:700px;
    }
 }
+
+/* FOOTER - DOWN*/
+.footerSection {
+   background-color: var(--dark) ;
+   box-shadow: 0px 0 20px rgba(80, 80, 80, 0.8);
+   color: var(--light);
+   display:flex;
+   flex-wrap: wrap;
+   font-size: 0.8rem;
+   margin:0 auto;
+   margin-top:auto;
+   text-align: center;
+   width:100%;
+}
+.footerSection .contact-details{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin:0 auto;
+   width:100%;
+}
+.footerSection .contact-details h4{
+   cursor: pointer;
+   width:100%;
+}
+/* FOOTER - UP*/
