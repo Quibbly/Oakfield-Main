@@ -163,24 +163,26 @@ header {
    width:100%;
 }
 #link-img {
-   border-radius:200px;
+   border-radius:100%;
    background-color:var(--light);
    display: flex;
-   height:180px;
+   height:170px;
    margin:0 auto;
    position: relative;
-   top:90px;
-   width:159px;
+   top:60px;
+   width:170px;
+   margin-top:50px;
 }
 #link-circle {
    background-color: var(--dark);
-   border-radius: 300px;
+   border-radius: 100%;
    height:140px;
    margin:0 auto;
    position: relative;
-   top:28px;
+   top:16px;
    text-align: center;
    width:140px;
+
 }
 .port-link {
    display: flex;
@@ -409,6 +411,7 @@ a:hover{
 /* MID SIZED DISPLAY */
 @media only screen and (min-width:700px) {
    /* DESKTOP ONLY NAV - DOWN*/
+
    .main-nav{
       border-radius: 0px 0px 5px 5px;
       display: block;
@@ -477,7 +480,7 @@ a:hover{
       color: var(--light);
       font-style: italic;
       font-size: 1.5rem;
-      max-width:95%;
+      max-width:100%;
       margin:0 auto;
       margin-bottom:150px;
       margin-top:-510px;
@@ -551,6 +554,7 @@ a:hover{
    #info-h2-bottom-hr-b {
       margin-bottom:40px;
    }
+
    /* PHOTOGRAPHER INFO - UP */
 }
 /* MEDIA QUERIES - UP */
