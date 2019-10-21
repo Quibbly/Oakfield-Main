@@ -42,14 +42,14 @@ function makeImagesDiv(thumbArray, fullArray) {
 function createImageThumbArray(amount,folderPath){
    let thumbImages = [];
    for(let i = 1; i < amount + 1; i++){
-      thumbImages[i] = './img/thumb/portfolio' + folderPath + ' ('+ i + ')' + '.jpg'
+      thumbImages[i] = './img/thumb/portfolio' + folderPath + '('+ i + ')' + '.jpg'
    }
    return thumbImages;
 }
 function createImageFullArray(amount,folderPath){
    let fullImages = [];
    for(let i = 1; i < amount + 1; i++){
-      fullImages[i] = './img/full/portfolio' + folderPath + ' ('+ i + ')' + '.jpg'
+      fullImages[i] = './img/full/portfolio' + folderPath + '('+ i + ')' + '.jpg'
    }
    return fullImages;
 }
