@@ -1,8 +1,50 @@
-let portfolioGallery = document.getElementById('port-gallery');
+
 let wedding = '/wedding/';
 let child = '/child/';
 let special = '/special/';
 let headshot = '/headshot/'; 
+
+var mainPageImageContainers = document.querySelectorAll('.mainGallImg');
+var mainPageImageLinks = document.querySelectorAll('.test-popup-link');
+var galleryImages = [];
+let portfolioGallery = document.getElementById('port-gallery');
+
+fetchGalleryImages=(category)=>{
+   fetch('https://aqueous-badlands-87446.herokuapp.com/getgalleryimages', {
+      method: 'post',
+      headers: {'Content-Type' : 'application/json'},
+      })
+      .then(response => response.json())
+      .then(data => {
+         data.resources.forEach(element=>{
+            galleryImages.push(element.url)
+         })
+
+         for(let i=0;i<galleryImages.length;i++){
+
+            var imageDiv = document.createElement('div');
+
+            var imageATag = document.createElement('a');
+
+            var imageEl = document.createElement('img');
+
+            imageATag.href = galleryImages[i];
+            imageEl.src = galleryImages[i];
+            imageATag.className = "test-popup-link"; 
+            imageDiv.className = "gallery"; 
+
+            imageATag.appendChild(imageEl);
+            imageDiv.appendChild(imageATag);
+
+            portfolioGallery.appendChild(imageDiv)
+         }
+      })
+      .catch(err=>{
+         console.log(err)
+      })
+   }
+
+
 
 // SORT BY WEDDING IMAGES
 function galSort(amount, type) {
@@ -17,26 +59,7 @@ function galSort(amount, type) {
 }
 
 // CREAT A DIV FULL OF IMAGES FROM RELEVENT ARRAY
-function makeImagesDiv(thumbArray, fullArray) {
-   // Create the containing div
-   var imageDiv = document.createElement('div');
-   // create each image and place in div
-   for(var i = 1;i < thumbArray.length;i++){
-      var imageATag = document.createElement('a');
-      var imageEl = document.createElement('img');
-      imageATag.href = fullArray[i];
-      imageEl.src = thumbArray[i];
-      imageATag.className = "test-popup-link"; 
-      imageDiv.className = "gallery"; 
-      imageATag.appendChild(imageEl);
-      imageDiv.appendChild(imageATag);
-      // Give lightbox class names
-      
-   }
-   // Finally, return the div
 
-   return imageDiv;
-}
 
 // CREATE AN ARRAY OF IMAGE LOCATIONS
 function createImageThumbArray(amount,folderPath){
