@@ -238,22 +238,29 @@ a:hover{
    }
 }
 
-#port-gallery {
+.port-gallery {
    width:90%;
    margin: 0 auto;
+   display:flex;
+   flex-wrap:wrap;
+   height:auto;
+   box-sizing: border-box;
 }
-
-#port-gallery div{
-   display:grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   width:100%;
-   margin: 0 auto;
+.galImageBox{
+   width:24%;
+   max-height:300px;
+   position: relative;
+   margin:1px;
 }
-
-#port-gallery div a{
+.test-popup-link{
    width:100%;
-   margin:0 auto;
-   margin-top:-6px;
+   height:100%;
+}
+.galImage{
+
+   width:100%;
+   height:100%;
+   object-fit: cover;
 }
 
 
@@ -278,6 +285,10 @@ a:hover{
    transition: background-color 0.3s ease;
 }
 #sort-buttons button:hover{
+   color: var(--dark); 
+   background-color: var(--light);
+}
+#sort-buttons button:focus{
    color: var(--dark); 
    background-color: var(--light);
 }

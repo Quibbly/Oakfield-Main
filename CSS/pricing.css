@@ -190,10 +190,9 @@ a:hover{
       text-transform: uppercase;
       margin-bottom:10px;
    }
-   .main-nav li:nth-child(2){
+   .main-nav li:nth-child(4){
       background-color: rgba(138, 138, 138, 0.466);
-    
-
+   
    }
    .main-nav a:hover {
       text-decoration:underline;

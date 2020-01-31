@@ -14,7 +14,7 @@
    </head>
 
     
-   <body onload="fetchGalleryImages()">
+   <body onload="fetchGalleryImages('wedding')">
       <div class="wrapper">
          <!-- TOP CONTAINER -->
          <div id="box-shadow-wrap">
@@ -61,13 +61,13 @@
          </div>
 
          <div id="sort-buttons">
-            <button onclick="galSort(27, wedding)" >Wedding</button>
-            <button onclick="galSort(17, child)" >Child & Baby</button>
-            <button onclick="galSort(3, headshot)">Headshots</button>
-            <button onclick="galSort(1, special)">Special</button>
+            <button autofocus onclick="fetchGalleryImages('wedding')" >Wedding</button>
+            <button onclick="fetchGalleryImages('baby')" >Child & Baby</button>
+            <button onclick="fetchGalleryImages('headshot')">Headshots</button>
+            <button onclick="fetchGalleryImages('special')">Special</button>
          </div>
 
-         <div id="port-gallery">
+         <div class="port-gallery">
 
          </div>
          <!-- FOOTER SECTION -->
@@ -81,12 +81,16 @@
          <!-- FOOTER SECTION -->
       </div>
       <!-- WRAPPER ENDS -->
-
+      
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous">
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
       </script>
-      <script src="./Javascript/jquery.magnific-popup.min.js"></script>
+      <script src="./Javascript/script.js"></script>
       <script src="./Javascript/portfolio.js"></script>
+      <script src="./Javascript/jquery.magnific-popup.min.js"></script>
+      <script>
+         
+      </script>
    </body>
 </html>
