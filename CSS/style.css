@@ -158,9 +158,33 @@ header {
    position: relative;
    top:-150px;
 }
+
 .link {
    margin-bottom:40px;
    width:100%;
+   transition: all .2s ease-in-out;
+   cursor: pointer;
+}
+.link:hover{
+   transform: scale(1.05);
+}
+.link:hover #port-link-info p{
+   color: orange;
+}
+.link h4 {
+   color: var(--light);
+   font-family: 'Playball', cursive;
+   font-size: 1.3rem;
+   height:100px;
+   margin:0 auto;
+   overflow: hidden;
+   padding-top:50px;
+   width:100px;
+   transition: all .2s ease-in-out;
+
+}
+.link:hover h4{
+   color: orange;
 }
 #link-img {
    border-radius:100%;
@@ -169,7 +193,7 @@ header {
    height:170px;
    margin:0 auto;
    position: relative;
-   top:60px;
+   top:80px;
    width:170px;
    margin-top:50px;
 }
@@ -183,12 +207,15 @@ header {
    text-align: center;
    width:140px;
 
+   
+
 }
 .port-link {
    display: flex;
    height:400px;
    margin:0 auto;  
    width:90%;
+
 }
 .port-link1 {
    background: url('../img/headerTwo.jpg');
@@ -216,27 +243,21 @@ header {
 }
 #port-link-info{
    background-color: var(--dark);
-   height:130px;
+   height:170px;
    position: relative;
    top:400px;
    width:100%;
+
 }
 #port-link-info p{
    color: var(--light);
    font-size:1.2rem;
    max-width: 80%;
    margin:20px auto 0 auto; 
+   transition: all .2s ease-in-out;
+   
 }
-.link h4 {
-   color: var(--light);
-   font-family: 'Playball', cursive;
-   font-size: 1.3rem;
-   height:100px;
-   margin:0 auto;
-   overflow: hidden;
-   padding-top:50px;
-   width:100px;
-}
+
 /* PORTFOLIO LINK CARDS - UP */
 /* ABOUT US TEXT - DOWN */
 #info-text {
@@ -323,6 +344,12 @@ header {
 .footerSection .contact-details h4{
    cursor: pointer;
    width:100%;
+}
+.footerSection a {
+   color: var(--light);
+}
+.footerSection a:visited{
+   color: var(--light);
 }
 /* FOOTER - UP*/
 
@@ -550,7 +577,7 @@ a:hover{
       display: none;
    }
    .photographer-bio p:before{
-      content:'Stefan Edwards';
+      content:'Stefan Brian';
       display:block;
       font-size:1.7rem;
       font-family: 'Roboto', sans-serif;

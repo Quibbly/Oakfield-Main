@@ -4,6 +4,9 @@ function scrollA() {
 } 
 
 
+portfolioCategorySet = (category) => {
+   localStorage.setItem('storageName',category);
+}
 
 var mainPageImageContainers = document.querySelectorAll('.mainGallImg');
 var mainPageImageLinks = document.querySelectorAll('.test-popup-link');

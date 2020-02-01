@@ -317,4 +317,10 @@ a:hover{
    cursor: pointer;
    width:100%;
 }
+.footerSection a {
+   color: var(--light);
+}
+.footerSection a:visited{
+   color: var(--light);
+}
 /* FOOTER - UP*/

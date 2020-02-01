@@ -63,6 +63,16 @@ header {
    
 }
 
+.first-section{
+   width:70%;
+   max-width:900px;
+   margin:0 auto;
+   margin-bottom: 150px;
+}
+.first-section div{
+   margin-top:30px;
+}
+
 
 /* MOBILE HAMBURGER MENU - DOWN*/
 #menu{
@@ -231,5 +241,11 @@ a:hover{
 .footerSection .contact-details h4{
    cursor: pointer;
    width:100%;
+}
+.footerSection a {
+   color: var(--light);
+}
+.footerSection a:visited{
+   color: var(--light);
 }
 /* FOOTER - UP*/

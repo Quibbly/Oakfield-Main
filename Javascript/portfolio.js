@@ -7,17 +7,18 @@ let headshot = '/headshot/';
 let galleryImages = [];
 let portfolioGallery = document.querySelector('.port-gallery');
 
-fetchGalleryImages=(category)=>{
+fetchGalleryImages=()=>{
    let galleryImages = [];
    while (portfolioGallery.firstChild) {
       portfolioGallery.removeChild(portfolioGallery.firstChild);
    }
+   let temp = localStorage.getItem("storageName")
    
    fetch('https://aqueous-badlands-87446.herokuapp.com/getgalleryimages', {
       method: 'post',
       headers: {'Content-Type' : 'application/json'},
       body: JSON.stringify({
-         "type": category
+         "type":localStorage.getItem("storageName")
       })
    })
    .then(response => response.json())

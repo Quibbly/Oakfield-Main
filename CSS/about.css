@@ -113,7 +113,7 @@ header {
    width:100%;
    margin:0 auto;
    max-width: 400px;;
-   height:320px;
+   height:280px;
    background-color: var(--dark);
    margin-bottom:10px;
 }
@@ -122,7 +122,7 @@ header {
 }
 .gallery p {
    color: var(--light);
-   max-width:60%;
+   max-width:70%;
    margin: 0 auto;
 
 }
@@ -189,6 +189,12 @@ iframe {
 .footerSection .contact-details h4{
    cursor: pointer;
    width:100%;
+}
+.footerSection a {
+   color: var(--light);
+}
+.footerSection a:visited{
+   color: var(--light);
 }
 /* FOOTER - UP*/
 
