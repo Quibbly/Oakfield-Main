@@ -17,7 +17,7 @@ fetchGalleryImages=(categoryInput)=>{
    while (portfolioGallery.firstChild) {
       portfolioGallery.removeChild(portfolioGallery.firstChild);
    }
-   console.log(submitValue)
+
    fetch('https://aqueous-badlands-87446.herokuapp.com/getgalleryimages', {
       method: 'post',
       headers: {'Content-Type' : 'application/json'},
