@@ -146,7 +146,8 @@ header {
    cursor: pointer;
 }
 .link:hover{
-   transform: scale(1.01);
+   transition: all .01s ease-in-out;
+   transform: scale(1.007);
 }
 
 .link h4 {
@@ -492,7 +493,7 @@ a:hover{
       cursor: pointer;
       max-width: 80px;
       position: relative;
-      top:-90px;
+      top:-180px;
    }
    .top-container {
       position: relative;
