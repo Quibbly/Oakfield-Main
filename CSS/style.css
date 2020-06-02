@@ -1,6 +1,6 @@
 /* GLOBALS AND RESETS -DOWN*/
 :root {
-   --dark:#333;
+   --dark:rgb(53, 53, 53);
    --light:#fbfbfb ;
 }
 html {
@@ -43,48 +43,26 @@ header {
 
 
 /* TOP CONTAINER - DOWN*/
-/* GLIDEJS HEADER - DOWN*/
 .glide .glide__track .glide__slides {
    color: var(--light);
 }
-.glide .glide__track .glide__slides li:first-child{
+.mainImage{
    background:url(../img/TestMain.png);
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment:scroll;
-   background-position-x: center;
+   background-position-x:59%;
+   background-position-y: 60%;
    width:100%;
-   height:1000px;
+   height:970px;
    
 }
-.glide .glide__track .glide__slides li:nth-child(2){
-   background:url(../img/headerTwo.jpg)center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-attachment:scroll;
-   background-position-x: center;
-   height:800px;
-   width:100%;
-}
-.glide .glide__track .glide__slides li:nth-child(3){
-   background:url(../img/headerThree.jpg) center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-attachment:scroll;
-   background-position-x: center;
-   height:800px;
-   width:100%;
-}
-.glide .glide__bullets {
-   position: relative;
-   top:-320px;
-} 
-/* GLIDEJS HEADER - UP*/
+
 
 .top-container{
    padding-top:10px;
    position: relative;
-   top:-200px;
+   top:150px;
    text-align: center;
    width:100%;
 }
@@ -102,7 +80,7 @@ header {
    cursor: pointer;
    max-width: 80px;
    position: relative;
-   top:-430px;
+   top:-30px;
 }
 .top-container img:hover {
    transition: all .2s ease-in-out;
@@ -168,11 +146,10 @@ header {
    cursor: pointer;
 }
 .link:hover{
-   transform: scale(1.05);
+   transition: all .01s ease-in-out;
+   transform: scale(1.007);
 }
-.link:hover #port-link-info p{
-   color: orange;
-}
+
 .link h4 {
    color: var(--light);
    font-family: 'Playball', cursive;
@@ -183,31 +160,33 @@ header {
    padding-top:50px;
    width:100px;
    transition: all .2s ease-in-out;
+   position: relative;
+   bottom: 15px;
 
 }
 .link:hover h4{
-   color: orange;
+   color: rgb(173, 162, 1);
 }
 #link-img {
    border-radius:100%;
    background-color:var(--light);
    display: flex;
-   height:170px;
+   height:110px;
    margin:0 auto;
    position: relative;
-   top:80px;
-   width:170px;
-   margin-top:50px;
+   top:40px;
+   width:120px;
+   margin-top:80px;
 }
 #link-circle {
    background-color: var(--dark);
    border-radius: 100%;
-   height:140px;
+   height:100px;
    margin:0 auto;
    position: relative;
-   top:16px;
+   top:5px;
    text-align: center;
-   width:140px;
+   width:100px;
 
    
 
@@ -249,6 +228,7 @@ header {
    position: relative;
    top:400px;
    width:100%;
+   border-radius: 0 0 10px 10px;
 
 }
 #port-link-info p{
@@ -380,7 +360,7 @@ a{
    transition: color 0.3s ease;
 }
 a:hover{
-   color: tomato;
+   color: rgb(173, 162, 1);
 }
 #menuToggle{
    left: 10px;
@@ -447,7 +427,7 @@ a:hover{
 
 /* MEDIA QUERIES - DOWN */
 /* MID SIZED DISPLAY */
-@media only screen and (min-width:700px) {
+@media only screen and (min-width:800px) {
    /* DESKTOP ONLY NAV - DOWN*/
 
    .main-nav{
@@ -513,7 +493,11 @@ a:hover{
       cursor: pointer;
       max-width: 80px;
       position: relative;
-      top:-90px;
+      top:-180px;
+   }
+   .top-container {
+      position: relative;
+      top:-100px;
    }
    .info-container h2{
       color: var(--light);
@@ -594,9 +578,24 @@ a:hover{
       margin-bottom:40px;
    }
 
+
    /* PHOTOGRAPHER INFO - UP */
 }
 /* MEDIA QUERIES - UP */
+
+@media only screen and (max-width:800px) {
+   .mainImage{
+      background:url(../img/TestMain.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment:scroll;
+      background-position-x: 58%;
+      background-position-y: 60%;
+      width:100%;
+      height:700px;
+      
+   }
+}
 
 @media only screen and (min-width:1600px) {
    /* .wrapper {
