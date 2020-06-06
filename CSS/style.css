@@ -563,7 +563,7 @@ a:hover{
       display: none;
    }
    .photographer-bio p:before{
-      content:'Stefan Brian';
+      content:'Stefan Edwards';
       display:block;
       font-size:1.7rem;
       font-family: 'Roboto', sans-serif;
