@@ -1,21 +1,8 @@
 /* GLOBALS AND RESETS -DOWN*/
 :root {
-   --dark:#333;
+   --dark:#2b2b2b;
    --light:#F5F5F5 ;
 }
-
-.loadingImg {
-   opacity: 0;
-   transition: opacity .400s;
-}
-.loadedImg {
-   opacity: 1;
-   transition: opacity .400s;
-}
-.removedImg {
-   opacity: 0;
-}
-
 
 html {
    box-sizing: border-box;
@@ -107,8 +94,17 @@ header {
    transition: color 0.3s ease;
    transition: background-color 0.3s ease;
 }
-
-
+.loadingImg {
+   opacity: 0;
+   transition: opacity .400s;
+}
+.loadedImg {
+   opacity: 1;
+   transition: opacity .400s;
+}
+.removedImg {
+   opacity: 0;
+}
 
 
 
@@ -137,6 +133,7 @@ header {
    -webkit-font-smoothing: antialiased;
    /* to stop flickering of text in safari */
    border-radius:0  0 20px 0;
+
 }
 a{
    color: #232323;
@@ -246,11 +243,12 @@ a:hover{
    }
    .main-nav li:nth-child(2){
       background-color: rgba(138, 138, 138, 0.466);
-    
-
    }
    .main-nav a:hover {
       text-decoration:underline;
+   }
+   #menuToggle{
+      display:none;
    }
    /* DESKTOP ONLY NAV - UP */
    .gallery a{
@@ -284,7 +282,7 @@ a:hover{
    }
    .galImageBox{
       width:24%;
-      max-height:400px;
+      max-height:500px;
       position: relative;
       margin:1px;
    }

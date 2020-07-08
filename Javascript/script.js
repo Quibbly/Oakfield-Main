@@ -1,6 +1,6 @@
 function scrollA() {
    document.body.scrollTop = 0; // For Safari
-   document.documentElement.scrollTop = 800; // For Chrome, Firefox, IE and Opera
+   document.documentElement.scrollTop = 1000; // For Chrome, Firefox, IE and Opera
 } 
 
 
@@ -10,3 +10,9 @@ portfolioCategorySet = (category) => {
 }
 
 
+
+setButtonState=(state) => {
+   if(state === 'wedding'){
+      document.cookie = 'portfolioSubCategory='+state+ '; expires= ; path=/; SameSite=None; Secure';
+   }
+}

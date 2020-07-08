@@ -21,14 +21,42 @@ function readCookie(name) {
 }
 
 
+setButtonState=(state) => {
+   if(state === 'wedding'){
+      let selectedButton = document.querySelector(".sort-buttons-container button[1]");
+      selectedButton.classList.add("sortButtonSelected");
+      console.log('yes');
+   }
+   else {
+      console.log('no');
+   }
+}
+
 fetchGalleryImages=(categoryInput)=>{
    if(categoryInput){
       submitValue = categoryInput;
    } else {
       submitValue = localStorage.getItem("storageName"); 
    }
-   let galleryImages = [];
 
+   const selectedButtonContainer = document.querySelectorAll(".sort-buttons-container button");
+   if(submitValue == 'wedding'){
+      selectedButtonContainer[0].focus();
+   }
+   else if(submitValue == 'baby'){
+      selectedButtonContainer[1].focus();
+   }
+   else if(submitValue == 'headshot'){
+      selectedButtonContainer[2].focus();
+   }
+   else if(submitValue == 'special'){
+      selectedButtonContainer[3].focus();
+   }
+   else{
+      selectedButtonContainer[0].focus();
+   }
+
+   let galleryImages = [];
 
    portfolioGallery.classList.remove("loadedImg");
    portfolioGallery.classList.add("loadingImg");
@@ -69,7 +97,7 @@ fetchGalleryImages=(categoryInput)=>{
             portfolioGallery.appendChild(imageBox)
    
             imageBox.classList.add("loadingImg");
-            setTimeout(function(){ imageBox.classList.add("loadedImg"); }, 300);
+            setTimeout(function(){ imageBox.classList.add("loadedImg"); }, 200);
          }
       })
       .then(data=>{

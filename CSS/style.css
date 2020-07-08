@@ -1,6 +1,6 @@
 /* GLOBALS AND RESETS -DOWN*/
 :root {
-   --dark:rgb(53, 53, 53);
+   --dark:#2b2b2b;
    --light:#F5F5F5 ;
 }
 html {
@@ -466,6 +466,9 @@ a:hover{
    }
    .main-nav a:hover {
       text-decoration:underline;
+   }
+   #menuToggle{
+      display:none;
    }
    /* DESKTOP ONLY NAV - UP */
    /* PORTFOLIO LINK CARDS - DOWN */
