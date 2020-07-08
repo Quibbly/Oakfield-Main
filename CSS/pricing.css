@@ -1,7 +1,7 @@
 /* GLOBALS AND RESETS -DOWN*/
 :root {
    --dark:#333;
-   --light:#fbfbfb ;
+   --light:#F5F5F5 ;
 }
 html {
    box-sizing: border-box;
@@ -49,7 +49,7 @@ header {
    margin:60px auto 0 auto;
    max-width: 100%;
    position: relative;
-   top:15px;
+   top:20px;
 }
 /* DEKSTOP NAV HIDDEN TILL MEDIA QUERY -DOWW */
 .main-nav{
@@ -177,7 +177,7 @@ a:hover{
       margin:0 auto;
       max-width:400px;
       position: relative;
-      top:-16px;
+      top:-10px;
       background-color: #8c8b8b1a;
    }
    .main-nav ul {

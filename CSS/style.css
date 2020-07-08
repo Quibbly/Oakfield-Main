@@ -1,7 +1,7 @@
 /* GLOBALS AND RESETS -DOWN*/
 :root {
    --dark:rgb(53, 53, 53);
-   --light:#fbfbfb ;
+   --light:#F5F5F5 ;
 }
 html {
    box-sizing: border-box;
@@ -427,7 +427,7 @@ a:hover{
 
 /* MEDIA QUERIES - DOWN */
 /* MID SIZED DISPLAY */
-@media only screen and (min-width:800px) {
+@media only screen and (min-width:700px) {
    /* DESKTOP ONLY NAV - DOWN*/
 
    .main-nav{
@@ -440,7 +440,7 @@ a:hover{
       background-color: #8c8b8b1a;
 
    }
-   .main-nav ul {
+   .main-nav ul { 
       /* border-bottom: 1px solid var(--dark); */
       display:grid;
       grid-gap:10px;
@@ -485,10 +485,6 @@ a:hover{
       width:80%;
    }
    /* PORTFOLIO LINK CARDS - UP */
-   .glide .glide__bullets {
-      position: relative;
-      top:-150px;
-   }
    .top-container img {
       cursor: pointer;
       max-width: 80px;
