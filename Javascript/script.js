@@ -3,16 +3,7 @@ function scrollA() {
    document.documentElement.scrollTop = 1000; // For Chrome, Firefox, IE and Opera
 } 
 
-
 portfolioCategorySet = (category) => {
    //localStorage.setItem('storageName',category);
    document.cookie = 'portfolioCategory='+category+ '; expires= ; path=/; SameSite=None; Secure';
-}
-
-
-
-setButtonState=(state) => {
-   if(state === 'wedding'){
-      document.cookie = 'portfolioSubCategory='+state+ '; expires= ; path=/; SameSite=None; Secure';
-   }
 }

@@ -98,6 +98,8 @@ fetchGalleryImages=(categoryInput)=>{
    
             imageBox.classList.add("loadingImg");
             setTimeout(function(){ imageBox.classList.add("loadedImg"); }, 200);
+
+            
          }
       })
       .then(data=>{
@@ -122,6 +124,10 @@ fetchGalleryImages=(categoryInput)=>{
                }
             }
          });
+         function eraseCookie(name) {
+            createCookie(name,"",-1);
+         }
+         eraseCookie('portfolioSubCategory');
       })
       .catch(err=>{
          console.log(err)
