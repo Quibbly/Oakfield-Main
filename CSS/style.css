@@ -247,6 +247,7 @@ header {
    padding-bottom:5px;
    width:90%;
    text-shadow: 0.2px 0.2px 1.1px #53585c;;
+
 }
 #info-text-hr-top{
    height:2px;
@@ -256,6 +257,7 @@ header {
    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
    margin:0 auto;
    width:90%;
+   
 }
 #info-text h3{
    background-color: var(--dark);
@@ -267,6 +269,9 @@ header {
    height:2px;
    margin-top:20px;
    margin-bottom:20px; 
+}
+#info-text p {
+   color:var(--textDark);
 }
 /* ABOUT US TEXT - UP */
 /* MAIN SECTION - UP*/
