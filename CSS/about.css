@@ -1,7 +1,8 @@
 /* GLOBALS AND RESETS -DOWN*/
 :root {
-   --dark:#2b2b2b;
-   --light:#F5F5F5 ;
+   --dark:#1f313f;
+   --textLight:#EAEAEA;
+   --textDark:#404447;
 }
 html {
    box-sizing: border-box;
@@ -10,7 +11,8 @@ html {
    scroll-behavior: smooth;
 }
 body {
-   background:var(--light);
+   background-image:url("../img/moroccan-flower/moroccan-flower.png");
+   background-repeat: repeat;
    font-family: 'Roboto', sans-serif;
    line-height: 1.4;
    margin:0;
@@ -71,11 +73,12 @@ header {
 /* MAIN SECTION - DOWN*/
 #box-shadow-wrap {
    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
-   
+   background-color: var(--textLight);
 }
 .info-container {
    text-align: center;
    margin-top:30px;
+   color: var(--textLight);
 }
 .info-container h2{
    font-size: 1.5rem;
@@ -198,6 +201,9 @@ iframe {
    color: var(--light);
 }
 /* FOOTER - UP*/
+.footerSection{
+   color: var(--textLight);
+}
 
 
 

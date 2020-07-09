@@ -1,7 +1,8 @@
 /* GLOBALS AND RESETS -DOWN*/
 :root {
-   --dark:#2b2b2b;
-   --light:#F5F5F5 ;
+   --dark:#1f313f;
+   --textLight:#EAEAEA;
+   --textDark:#404447;
 }
 html {
    box-sizing: border-box;
@@ -10,7 +11,8 @@ html {
    scroll-behavior: smooth;
 }
 body {
-   background:var(--light);
+   background-image:url("../img/moroccan-flower/moroccan-flower.png");
+   background-repeat: repeat;
    font-family: 'Roboto', sans-serif;
    line-height: 1.4;
    margin:0;
@@ -61,7 +63,7 @@ header {
 /* MAIN SECTION - DOWN*/
 #box-shadow-wrap {
    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
-   
+   background-color: var(--textLight);
 }
 
 .first-section{
@@ -72,6 +74,9 @@ header {
 }
 .first-section div{
    margin-top:30px;
+}
+.footerSection{
+   color: var(--textLight);
 }
 
 
@@ -226,7 +231,7 @@ a:hover{
 .footerSection {
    background-color: var(--dark) ;
    box-shadow: 0px 0 20px rgba(80, 80, 80, 0.8);
-   color: var(--light);
+   color: var(--textLight);
    display:flex;
    flex-wrap: wrap;
    font-size: 0.8rem;
@@ -247,9 +252,9 @@ a:hover{
    width:100%;
 }
 .footerSection a {
-   color: var(--light);
+   color: var(--textLight);
 }
 .footerSection a:visited{
-   color: var(--light);
+   color: var(--textLight);
 }
 /* FOOTER - UP*/
