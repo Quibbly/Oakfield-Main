@@ -52,13 +52,13 @@ header {
    width:99%;
    max-width:1000px;
    margin:0 auto;
-   margin-bottom: 6.9%;
    margin-top:100px;
    display: flex;
    flex-wrap: wrap;
+   min-height: 540px;
 }
 .catDivButton {
-   width:100%;
+   width:95%;
    height:100px;
    text-align: center;
    background-color: var(--dark);
@@ -290,7 +290,7 @@ a:hover{
 
 /* MEDIA QUERIES - DOWN */
 /* MID SIZED DISPLAY */
-@media only screen and (min-width:700px) {
+@media only screen and (min-width:900px) {
    /* DESKTOP ONLY NAV - DOWN*/
    .main-nav{
       border-radius: 0px 0px 5px 5px;
@@ -339,7 +339,6 @@ a:hover{
       width:70%;
       max-width:1000px;
       margin:0 auto;
-      margin-bottom: 6%;
       margin-top:100px;
       display: flex;
       flex-wrap: wrap;
@@ -448,10 +447,25 @@ a:hover{
 }
 /* MEDIA QUERIES - UP */
 
+@media only screen and (max-width:1100px) {
+   .albumCollection img{
+      width:40%;
+      margin-left:10px;
+      margin-bottom:20px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
+      object-fit: cover;
+   }
+   .albumCollection ul{
+      width:40%;
+      margin-left:20px;
+      font-size: 1.2rem;
+   }
+}
 @media only screen and (min-width:900px) {
    iframe {
       height:700px;
    }
+
 }
 
 /* FOOTER - DOWN*/
@@ -484,4 +498,5 @@ a:hover{
 .footerSection a:visited{
    color: var(--textLight);
 }
+
 /* FOOTER - UP*/
