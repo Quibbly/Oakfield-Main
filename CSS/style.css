@@ -33,7 +33,7 @@ header {
    margin-top:-20px;
 }
 .mainContentContainer{
-   width:80%;
+   width:100%;
    margin:0 auto;
    max-width: 1500px;
 }
@@ -449,7 +449,7 @@ a:hover{
 
 /* MEDIA QUERIES - DOWN */
 /* MID SIZED DISPLAY */
-@media only screen and (min-width:700px) {
+@media only screen and (min-width:900px) {
    /* DESKTOP ONLY NAV - DOWN*/
 
    .main-nav{
@@ -505,8 +505,8 @@ a:hover{
       flex-wrap: wrap;
       margin:0 auto;
       position: relative;
-      top:-150px;
-      width:80%;
+      top:-230px;
+      width:90%;
    }
    /* PORTFOLIO LINK CARDS - UP */
    .top-container img {
@@ -604,9 +604,9 @@ a:hover{
    .blowup{
       width:90%;
       margin:0 auto;
-      margin-top:200px;
+      margin-top:80px;
       opacity: 0.97;
-      margin-bottom: -100px;
+      margin-bottom: -130px;
       display:block;
    }
    .blowup img{
@@ -638,18 +638,33 @@ a:hover{
       color: var(--textDark);
 
    }
+   #info-text-container{
+      margin-top: -30px;
+   }
 }
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:900px) {
    .mainImage{
       background:url(../img/TestMain.png);
       background-repeat: no-repeat;
       background-size: cover;
       background-attachment:scroll;
-      background-position-x: 58%;
+      background-position-x:49%;
       background-position-y: 60%;
       width:100%;
-      height:700px;
-      
+      max-height: 900px;
+   }
+   .top-container{
+      padding-top:10px;
+      position: relative;
+      top:-50px;
+      text-align: center;
+      width:100%;
+      color: var(--dark);
+
+   }
+   #downArrow{
+      position: relative;
+      top:-340px;
    }
 }
 @media only screen and (min-width:1600px) {
@@ -668,13 +683,12 @@ a:hover{
       flex-wrap: wrap;
       margin:0 auto;
       position: relative;
-      top:-200px;
-      
-      width:100%;
-      margin-bottom: -240px;
+      top:-150px;
+
+      width:90%;
+      margin-bottom: -180px;
       background:var(--textLight);
       padding-bottom: 170px;
-      z-index: -1;
    }
    #info-text-container{
       margin-bottom:-200px;
@@ -701,7 +715,7 @@ a:hover{
       background-repeat: no-repeat;
       background-size: cover;
       background-attachment:scroll;
-      background-position-x:59%;
+      background-position-x:49%;
       background-position-y: 60%;
       width:100%;
       height:1080px;   
@@ -723,7 +737,7 @@ a:hover{
       background-repeat: no-repeat;
       background-size: cover;
       background-attachment:scroll;
-      background-position-x:59%;
+      background-position-x:49%;
       background-position-y: 60%;
       width:100%;
       height:1440px;   
