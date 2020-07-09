@@ -317,6 +317,16 @@ header {
    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
 }
 
+.infoBlockThree{
+   display:none;
+   max-width: 60%;
+   margin:0 auto;
+   margin-bottom: 100px;
+   
+}
+
+
+
 /* LIGHTBOX GALLERY - UP */
 /* BOTTOM SECTION - UP*/
 
@@ -611,6 +621,30 @@ a:hover{
       -webkit-box-shadow: 0px 3px 54px 0px rgba(0,0,0,0.75);
       -moz-box-shadow: 0px 3px 54px 0px rgba(0,0,0,0.75);
       box-shadow: 0px 3px 54px 0px rgba(0,0,0,0.75);
+   }
+
+   .infoBlockThree{
+      display:block;
+      max-width: 40%;
+      margin:0 auto;
+      margin-bottom: 100px;
+   }
+   .infoBlockThree h3{
+      background-color: var(--dark);
+      max-width: 600px;
+      margin:0 auto;
+      color: var(--textLight);
+      padding:20px;
+      margin-top: 60px;
+   }
+   .infoBlockThree p{
+      background-color: var(--textLight);
+      padding:20px;
+      max-width:600px;
+      margin:0 auto;
+      font-size: 1.2rem;
+      color: var(--textDark);
+
    }
 
 
