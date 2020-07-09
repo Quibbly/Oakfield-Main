@@ -109,6 +109,13 @@ header {
    opacity: 0;
 }
 .footerSection{
+   background-color: var(--dark);
+   color: var(--textLight);
+}
+.footerSection a {
+   color: var(--textLight);
+}
+.footerSection a:visited{
    color: var(--textLight);
 }
 
@@ -355,10 +362,10 @@ a:hover{
       width:100%;
    }
    .footerSection a {
-      color: var(--light);
+      color: var(--textLight);
    }
    .footerSection a:visited{
-      color: var(--light);
+      color: var(--textLight);
    }
    /* FOOTER - UP*/
 }
