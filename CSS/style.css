@@ -561,7 +561,7 @@ a:hover{
       display:grid;
       grid-template-columns: 1fr 1fr;
       margin: 0 auto;
-      margin-top:110px;
+      margin-top:190px;
       margin-bottom:90px;
       max-width: 700px;
       text-align: center;
@@ -611,25 +611,6 @@ a:hover{
       -webkit-box-shadow: 0px 3px 54px 0px rgba(0,0,0,0.75);
       -moz-box-shadow: 0px 3px 54px 0px rgba(0,0,0,0.75);
       box-shadow: 0px 3px 54px 0px rgba(0,0,0,0.75);
-   }
-   .blowup h3{
-      color: #2b2b2b;
-      font-size: 4rem;
-      display: inline;
-      position: relative;
-      bottom:600px;
-      text-shadow: -1px -1px 12px #fffcfce8;
-      font-style: italic;
-      font-family: 'Playball', cursive;
-      letter-spacing: 10px;
-   }
-   .blowup h3::before{
-      content: open-quote;
-      font-size: 5rem;
-   }
-   .blowup h3::after{
-      content: close-quote;
-      font-size: 5rem;
    }
 
 
