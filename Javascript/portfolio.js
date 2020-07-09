@@ -98,8 +98,7 @@ fetchGalleryImages=(categoryInput)=>{
    
             imageBox.classList.add("loadingImg");
             setTimeout(function(){ imageBox.classList.add("loadedImg"); }, 200);
-
-            
+            ScrollReveal().reveal('.galImage'); 
          }
       })
       .then(data=>{
