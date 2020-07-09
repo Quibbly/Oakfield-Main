@@ -77,7 +77,7 @@ fetchGalleryImages=(categoryInput)=>{
       .then(response => response.json())
       .then(data => {
          data.resources.forEach(element=>{
-            galleryImages.push(element.url)
+            galleryImages.push(element.secure_url)
          })
    
          for(let i=0;i<galleryImages.length;i++){ 
