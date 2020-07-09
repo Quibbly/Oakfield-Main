@@ -108,7 +108,7 @@ header {
    font-size: 1.2rem;
    max-width:100%;
    margin:-460px auto 60px;
-   padding:15px 0 10px 0; 
+   padding:10px; 
    background-color:var(--dark);
    color: var(--text);
    padding:30px;
@@ -248,6 +248,7 @@ header {
    width:90%;
    text-shadow: 0.2px 0.2px 1.1px #53585c;;
 
+
 }
 #info-text-hr-top{
    height:2px;
@@ -257,6 +258,10 @@ header {
    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
    margin:0 auto;
    width:90%;
+   background-color: var(--textLight);
+   padding-top:20px;
+   margin-top:100px;
+   margin-bottom:100px;
    
 }
 #info-text h3{
@@ -268,7 +273,7 @@ header {
 #info-text-hr-bottom{
    height:2px;
    margin-top:20px;
-   margin-bottom:20px; 
+   margin-bottom:-50px; 
 }
 #info-text p {
    color:var(--textDark);
@@ -299,9 +304,17 @@ header {
    width:100%;
   object-fit: cover;
 }
+.blowup{
+   display: none;
+   
+}
+
 .photographer-bio {
+   padding-top:50px;
    display:none;
    color: var(--textDark);
+   background-color: var(--textLight);
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
 }
 
 /* LIGHTBOX GALLERY - UP */
@@ -585,6 +598,38 @@ a:hover{
    }
    #info-h2-bottom-hr-b {
       margin-bottom:40px;
+   }
+   .blowup{
+      width:90%;
+      margin:0 auto;
+      margin-top:200px;
+      opacity: 0.97;
+      margin-bottom: -100px;
+      display:block;
+   }
+   .blowup img{
+      -webkit-box-shadow: 0px 3px 54px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 3px 54px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 3px 54px 0px rgba(0,0,0,0.75);
+   }
+   .blowup h3{
+      color: #2b2b2b;
+      font-size: 4rem;
+      display: inline;
+      position: relative;
+      bottom:600px;
+      text-shadow: -1px -1px 12px #fffcfce8;
+      font-style: italic;
+      font-family: 'Playball', cursive;
+      letter-spacing: 10px;
+   }
+   .blowup h3::before{
+      content: open-quote;
+      font-size: 5rem;
+   }
+   .blowup h3::after{
+      content: close-quote;
+      font-size: 5rem;
    }
 
 
