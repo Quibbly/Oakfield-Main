@@ -246,9 +246,6 @@ header {
    margin:0 auto;
    padding-bottom:5px;
    width:90%;
-   text-shadow: 0.2px 0.2px 1.1px #53585c;;
-
-
 }
 #info-text-hr-top{
    height:2px;
@@ -261,8 +258,7 @@ header {
    background-color: var(--textLight);
    padding-top:20px;
    margin-top:100px;
-   margin-bottom:100px;
-   
+   margin-bottom:100px;  
 }
 #info-text h3{
    background-color: var(--dark);
