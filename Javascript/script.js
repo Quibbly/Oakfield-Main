@@ -1,6 +1,6 @@
-function scrollA() {
+function scrollDown() {
    document.body.scrollTop = 0; // For Safari
-   document.documentElement.scrollTop = 1000; // For Chrome, Firefox, IE and Opera
+   document.documentElement.scrollTop = 1030; // For Chrome, Firefox, IE and Opera
 } 
 
 portfolioCategorySet = (category) => {
