@@ -12,220 +12,143 @@
       <link rel="stylesheet" href="./CSS/style.css">
       <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Caveat|Kalam:700|Muli:600|Playball|Radley:400i&display=swap" > 
       <link rel="stylesheet" href="./CSS/magnific-popup.css">
-
       <meta
          name="description"
          content="Newport Wales Family Wedding Photographer"
       />
    </head>
-
    <body onload="portfolioCategorySet('wedding')">
+
       <header>
-         <div class="mainImage">
-
-         </div> 
+         <div id="fullPageImage"></div>
+         <h1>Oakfield Photography</h1>
+         <nav>
+            <ul>
+               <li> <a href="https://www.oakfield-photography.com/">HOME</a></li>
+               <li> <a onClick="portfolioCategorySet('wedding')" href="./portfolio">PORTFOLIO</a></li>
+               <li> <a href="./about">ABOUT US</a></li>
+               <li> <a href="./pricing">PRICING</a></li>
+            </ul>
+         </nav>
+         <div id="mobileMenuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="mobileMenu">
+              <a href="https://www.oakfield-photography.com/"><li>HOME</li></a>
+              <a onClick="portfolioCategorySet('wedding')" href="./portfolio"><li>PORTFOLIO</li></a>
+              <a href="./about"><li>ABOUT US</li></a>
+              <a href="./pricing"><li>PRICING</li></a>
+            </ul>
+         </div>
+         <div onClick="scrollDown()" id="downArrow"><img src="./img/whiteArrow.png" alt=""></div>
       </header>
-         
-      <div class="wrapper">
-         <!-- TOP CONTAINER -->
-         <section class="top-container">
-            <header>
-               <h1>Oakfield Photography</h1>
-               <!-- NAVIGATION -->
-               <nav class="main-nav">
-                  <ul>
-                     <li> <a href="https://www.oakfield-photography.com/">HOME</a></li>
-                     <li> <a onClick="portfolioCategorySet('wedding')" href="./portfolio">PORTFOLIO</a></li>
-                     <li> <a href="./about">ABOUT US</a></li>
-                     <li> <a href="./pricing">PRICING</a></li>
-                  </ul>
-               </nav>
-               <div id="menuToggle">
-                  <!--
-                  A fake / hidden checkbox is used as click reciever,
-                  so you can use the :checked selector on it.
-                  -->
-                  <input type="checkbox" />
-                  <!--
-                  Some spans to act as a hamburger.
-                  They are acting like a real hamburger,
-                  not that McDonalds stuff.
-                  -->
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <!--
-                  Too bad the menu has to be inside of the button
-                  but hey, it's pure CSS magic.
-                  -->
-                  <ul id="menu">
-                    <a href="https://www.oakfield-photography.com/"><li>HOME</li></a>
-                    <a onClick="portfolioCategorySet('wedding')" href="./portfolio"><li>PORTFOLIO</li></a>
-                    <a href="./about"><li>ABOUT US</li></a>
-                    <a href="./pricing"><li>PRICING</li></a>
-                  </ul>
-               </div>
-               <img onclick="scrollA()" id="downArrow"  src="./img/whiteArrow.png" alt="Server Error Loading Image">
-            </header>
-         </section>
 
-
-         <!-- INFO CONTAINER  -->
-         <section class="info-container">
-            <div id="info-header-container">
-               <h2> 
-                  A Wedding & Family Photographer - South Wales, Newport
-               </h2>
+      <!-- MAIN WRAPPER -->
+      <div id="content">
+         <div id="h2Container"><h2>A Wedding & Family Photographer - South Wales, Newport</h2></div>
+         <div id="portfolioLinksContainerMain">
+            <div id="portfolioLinksContainer">
+               <div onClick="portfolioCategorySet('wedding')" id="linkWeddingPortfolio" class="portfolioLink">
+                  <a href="./portfolio">
+                     <div id="weddingPortLink" class="port-link-image"></div>
+                     <div class="linkTextBlock"><p> We have a range of wedding packages for every budget, and we love to tailor them to suit your needs.</p></div>
+                     <div class="linkTitleCircleCutout"><div class="linkTitleCircle"><h4>Weddings</h4></div></div>
+                  </a> 
+               </div> 
+               <div onClick="portfolioCategorySet('baby')" id="linkBabyPortfolio" class="portfolioLink">
+                  <a href="./portfolio">
+                     <div id="childrenPortLink" class="port-link-image"></div> 
+                     <div class="linkTextBlock"><p> We have several different newborn or child packages to suit every need. </p></div>
+                     <div class="linkTitleCircleCutout"><div class="linkTitleCircle"><h4>Children</h4></div></div>
+                  </a> 
+               </div> 
+               <div onClick="portfolioCategorySet('headshot')" id="linkHeadshotPortfolio" class="portfolioLink">
+                  <a href="./portfolio">
+                     <div id="headshotsPortLink" class="port-link-image"> </div>  
+                     <div class="linkTextBlock"><p>We can shoot individuals or small groups in our Newport Photography Studio, for both personal and professional use.</p></div>
+                     <div class="linkTitleCircleCutout"><div class="linkTitleCircle"><h4>Headshots</h4></div></div>
+                  </a>
+               </div> 
+               <div onClick="portfolioCategorySet('special')" id="linkSpecialityPortfolio" class="portfolioLink">
+                  <a href="./portfolio">
+                     <div id="specialPortLink" class="port-link-image"></div> 
+                     <div class="linkTextBlock"><p> We cover most types of Event Photography normally only charging for any images purchased. </p></div>
+                     <div class="linkTitleCircleCutout"><div class="linkTitleCircle"><h4>Speciality</h4></div></div>
+                  </a> 
+               </div> 
             </div>
-            <div class="mainContentContainer">
-               <div class="links-container">
-                  <div onClick="portfolioCategorySet('wedding')" class="link">
-                     <a href="./portfolio">
-                        <div id="link-img">
-                           <div id="link-circle"><h4>Weddings</h4></div>
-                        </div> 
-                        <div class="port-link port-link1">
-                           <div id="port-link-info">
-                              <p>
-                                 We have a range of wedding packages for every budget, and we love to tailor them to suit your needs.
-                              </p>
-                           </div>
-                        </div>
-                     </a>  
-                  </div> 
+         </div>
 
-                  <div onClick="portfolioCategorySet('baby')" class="link">
-                     <a href="./portfolio">
-                        <div id="link-img">
-                           <div id="link-circle"><h4>Children</h4></div> 
-                        </div>
-                        <div class="port-link port-link2">
-                           <div id="port-link-info">
-                              <p>
-                                 We have several different newborn or child packages to suit every need.
-                              </p>
-                           </div>
-                        </div> 
-                     </a> 
-                  </div> 
+         <div id="aboutUs" class="infoText">
+            <h3>A little bit about us..</h3>
+            <p> Oakfield Photography is a family run business, operating in and around Newport, Wales. Our beautiful studio is equipped to handle everything from baby and children shoots, to complex speciality shoots. We have wedding packages to suit all budgets and our style of photography makes every effort not to interfere with the normal flow of your day, adopting a more photo-journalistic approach as much as possible. </p>
+         </div>
 
-                  <div onClick="portfolioCategorySet('headshot')" class="link">
-                     <a href="./portfolio">
-                        <div id="link-img">
-                           <div id="link-circle"><h4>Headshots</h4></div> 
-                        </div> 
-                        <div class="port-link port-link3">
-                           <div id="port-link-info">
-                              <p>
-                                 We can shoot individuals or small groups in our Newport Photography Studio, for both personal and professional use
-                              </p>
-                           </div>
-                        </div>  
-                     </a>
-                  </div> 
+         <div id="blowUpImage"></div>
 
-                  <div onClick="portfolioCategorySet('special')" class="link">
-                     <a href="./portfolio">
-                        <div id="link-img">
-                           <div id="link-circle"><h4>Speciality</h4></div> 
-                        </div> 
-                        <div class="port-link port-link4">
-                           <div id="port-link-info">
-                              <p>
-                                 We cover most types of Event Photography normally only charging for any images purchased.
-                              </p>
-                           </div>
-                        </div> 
-                     </a> 
-                  </div> 
-               </div>
-               
-               <div id="info-text-container">
-                  <div id="info-text">
-                     <h3>A little bit about us..</h3>
-                     <p>
-                        Oakfield Photography is a family run business, operating in and around Newport, Wales. Our beautiful studio is equipped to handle everything from baby and children shoots, to complex speciality shoots. We have wedding packages to suit all budgets and our style of photography makes every effort not to interfere with the normal flow of your day, adopting a more photo-journalistic approach as much as possible.
-                     </p>
-                  </div>
-               </div>
-
-               <div class="blowup">
-                  <img src="./img/mainPage/blowup.jpg" alt="">
-               </div>
-
-               <div class="photographer-bio">
-                  <img src="./img/(2).jpg" alt="Server Error Loading Image">
-                  <p>"I have been professionally taking images since 1983, and have worked on a great variety of assingments. I was first trained in the British Army, before moving onto several further courses, including a 3-year course in professional photography with the New York Institute of Photography."
-                  </p>
-               </div>
-
-               <div class="image-gall-a gallery"> 
-                  <a class="popup-link" href="./img/mainPage/full/(1).jpg"><img class="mainGallImg" src="./img/mainPage/(1).jpg"/></a>
-                  <a class="popup-link" href="./img/mainPage/full/(2).jpg"><img  class="mainGallImg" src="./img/mainPage/(2).jpg"/></a>
-                  <a class="popup-link" href="./img/mainPage/full/(3).jpg"><img  class="mainGallImg" src="./img/mainPage/(3).jpg"/></a>
-                  <a class="popup-link" href="./img/mainPage/full/(4).jpg"><img  class="mainGallImg" src="./img/mainPage/(4).jpg"/></a>
-                  <a class="popup-link" href="./img/mainPage/full/(5).jpg"><img  class="mainGallImg" src="./img/mainPage/(5).jpg"/></a>
-                  <a class="popup-link" href="./img/mainPage/full/(6).jpg"><img  class="mainGallImg" src="./img/mainPage/(6).jpg"/></a>
-               </div>
-
-               <section class="infoBlockThree">
-                  <h3>Where to find us..</h2>
-                  <p>01633 546954 || 07845795526</p>
-                  <p>87 Waltwood Park Drive, Llanmartin, Newport - NP182HE</p>
-                  <p>admin@oakfield-photography.com</p>
-               </section>
-         </section>
-      </div>
-         <!-- INFO CONTAINER  --> 
-
-         <!-- FOOTER SECTION -->
-         <footer class="footerSection">
-            <div class="contact-details">
-               <h4 id="phone"> 01633 546954 || 07845795526</h4>
-               <h4 id="email">admin@oakfield-photography.com</h4>
-               <a target="_blank" href="https://www.facebook.com/taffoakfield/" ><h4 id="facebook">FACEBOOK</h4></a>
+         <div id="photographerBio" class="infoText">
+            <div>
+               <img src="./img/photographerPortriat.jpg" alt="Server Error Loading Image">
             </div>
-         </footer>
-         <!-- FOOTER SECTION -->
+            <div>
+               <p>I have been professionally taking images since 1983, and have worked on a great variety of assingments. I was first trained in the British Army, before moving onto several further courses, including a 3-year course in professional photography with the New York Institute of Photography.</p>
+            </div>
+         </div>
+
+         <div id="smallGallery" class=".popup-link">
+            <a class="popup-link" href="./img/mainPage/full/(1).jpg"><img class="mainGallImg" src="./img/mainPage/(1).jpg"/></a>
+            <a class="popup-link" href="./img/mainPage/full/(2).jpg"><img  class="mainGallImg" src="./img/mainPage/(2).jpg"/></a>
+            <a class="popup-link" href="./img/mainPage/full/(3).jpg"><img  class="mainGallImg" src="./img/mainPage/(3).jpg"/></a>
+            <a class="popup-link" href="./img/mainPage/full/(4).jpg"><img  class="mainGallImg" src="./img/mainPage/(4).jpg"/></a>
+            <a class="popup-link" href="./img/mainPage/full/(5).jpg"><img  class="mainGallImg" src="./img/mainPage/(5).jpg"/></a>
+            <a class="popup-link" href="./img/mainPage/full/(6).jpg"><img  class="mainGallImg" src="./img/mainPage/(6).jpg"/></a>
+         </div>
+
+         <div id="locationInfo" class="infoText">
+            <h3>Where to find us..</h2>
+            <div>
+               <p>07845795526</p>
+               <p>admin@oakfield-photography.com</p>
+               <a href="https://www.facebook.com/taffoakfield/"><p>facebook.com/taffoakfield</p></a>
+               <p>87 Waltwood Park Drive, Llanmartin, Newport - NP182HE</p>
+            </div>
+         </div>
       </div>
-      <!-- WRAPPER ENDS  -->
+      <!-- MAIN WRAPPER ENDS -->
+
+      <footer>
+         <div class="contact-details">
+            <h4 id="phone"> 07845795526</h4>
+            <h4 id="email">ADMIN@OAKFIELD-PHOTOGRAPHY.COM</h4>
+            <a target="_blank" href="https://www.facebook.com/taffoakfield/"><h4 id="facebook">FACEBOOK</h4></a>
+         </div>
+      </footer>
       
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous">
-      </script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="./Javascript/script.js"></script>
       <script src="https://unpkg.com/scrollreveal"></script>
       <script>
-         ScrollReveal().reveal('.links-container');
-         ScrollReveal().reveal('.info-text-container');
-         ScrollReveal().reveal('.blowup');
-         ScrollReveal().reveal('.photographer-bio');
-         ScrollReveal().reveal('.gallery');
-         ScrollReveal().reveal('.footerSection'); 
+         ScrollReveal().reveal('#h2Container');
+         ScrollReveal().reveal('.portfolioLink');
+         ScrollReveal().reveal('.infoText');
+         ScrollReveal().reveal('#blowUpImage');
+         ScrollReveal().reveal('.popup-link');
+         ScrollReveal().reveal('.contact-details'); 
       </script>
-
       <script src="./Javascript/jquery.magnific-popup.min.js"></script>
       <script>
          $('.popup-link').magnificPopup({
             type: 'image',
-            // other options
             gallery: {
-               // options for gallery
                enabled: true
             },
             zoom: {
-               enabled: true, // By default it's false, so don't forget to enable it
-
-               duration: 300, // duration of the effect, in milliseconds
-               easing: 'ease-in-out', // CSS transition easing function
-
-               // The "opener" function should return the element from which popup will be zoomed in
-               // and to which popup will be scaled down
-               // By defailt it looks for an image tag:
+               enabled: true,
+               duration: 300,
+               easing: 'ease-in-out',
                opener: function(openerElement) {
-                  // openerElement is the element on which popup was initialized, in this case its <a> tag
-                  // you don't need to add "opener" option if this code matches your needs, it's defailt one.
                   return openerElement.is('img') ? openerElement : openerElement.find('img');
                }
             }
