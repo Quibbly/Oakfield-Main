@@ -724,7 +724,7 @@ a:hover{
    .top-container{
       padding-top:10px;
       position: relative;
-      top:-220px;
+      top:-190px;
       text-align: center;
       width:100%;
       color: var(--dark);
