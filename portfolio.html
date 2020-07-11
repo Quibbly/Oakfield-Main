@@ -12,75 +12,53 @@
       <script src="./Javascript/photoswipe.min.js"></script> 
       <script src="./Javascript/photoswipe-ui-default.min.js"></script> 
    </head>
-
     
    <body onload="fetchGalleryImages(readCookie('portfolioCategory'))">
-      <div class="wrapper">
-         <!-- TOP CONTAINER -->
-         <div id="box-shadow-wrap">
-            <section class="top-container">
-               <header>
-                  <h1>Oakfield Photography</h1>
-                  <!-- NAVIGATION -->
-                  <nav class="main-nav">
-                     <ul>
-                        <li> <a href="https://www.oakfield-photography.com/">HOME</a></li>
-                        <li> <a onClick="portfolioCategorySet('wedding')" href="./portfolio">PORTFOLIO</a></li>
-                        <li> <a href="./about">ABOUT US</a></li>
-                        <li> <a href="./pricing">PRICING</a></li>
-                     </ul>
-                  </nav>
-                  <div id="menuToggle">
-                     <!--
-                     A fake / hidden checkbox is used as click reciever,
-                     so you can use the :checked selector on it.
-                     -->
-                     <input type="checkbox" />
-                     <!--
-                     Some spans to act as a hamburger.
-                     They are acting like a real hamburger,
-                     not that McDonalds stuff.
-                     -->
-                     <span></span>
-                     <span></span>
-                     <span></span>
-                     <!--
-                     Too bad the menu has to be inside of the button
-                     but hey, it's pure CSS magic.
-                     -->
-                     <ul id="menu">
-                     <a href="https://www.oakfield-photography.com/"><li>HOME</li></a>
-                     <a onClick="portfolioCategorySet('wedding')" href="./portfolio"><li>PORTFOLIO</li></a>
-                     <a href="./about"><li>ABOUT US</li></a>
-                     <a href="./pricing"><li>PRICING</li></a>
-                     </ul>
-                  </div>
-               </header>
-            </section>
-
+      <header>
+         <h1>Oakfield Photography</h1>
+         <nav>
+            <ul>
+               <li> <a href="https://www.oakfield-photography.com/">HOME</a></li>
+               <li> <a onClick="portfolioCategorySet('wedding')" href="./portfolio">PORTFOLIO</a></li>
+               <li> <a href="./about">ABOUT US</a></li>
+               <li> <a href="./pricing">PRICING</a></li>
+            </ul>
+         </nav>
+         <div id="mobileMenuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="mobileMenu">
+              <a href="https://www.oakfield-photography.com/"><li>HOME</li></a>
+              <a onClick="portfolioCategorySet('wedding')" href="./portfolio"><li>PORTFOLIO</li></a>
+              <a href="./about"><li>ABOUT US</li></a>
+              <a href="./pricing"><li>PRICING</li></a>
+            </ul>
          </div>
+      </header>
 
-         <div class ="sort-buttons-container" id="sort-buttons">
+      <div id="content">
+         <div id="sort-buttons-container">
             <button onclick="fetchGalleryImages('wedding')" >Wedding</button>
             <button onclick="fetchGalleryImages('baby')" >Child & Baby</button>
             <button onclick="fetchGalleryImages('headshot')">Headshots</button>
             <button onclick="fetchGalleryImages('special')">Speciality</button>
          </div>
 
-         <div class="port-gallery">
+         <div class="port-gallery"> </div>
 
-         </div>
-         <!-- FOOTER SECTION -->
-         <footer class="footerSection">
-            <div class="contact-details">
-               <h4 id="phone"> 01633 546954 || 07845795526</h4>
-               <h4 id="email">admin@oakfield-photography.com</h4>
-               <a target="_blank" href="https://www.facebook.com/taffoakfield/" ><h4 id="facebook">FACEBOOK</h4></a>
-            </div>
-         </footer>
-         <!-- FOOTER SECTION -->
       </div>
-      <!-- WRAPPER ENDS -->
+
+      <!-- FOOTER SECTION -->
+      <footer class="footerSection">
+         <div class="contact-details">
+            <h4 id="phone"> 01633 546954 || 07845795526</h4>
+            <h4 id="email">admin@oakfield-photography.com</h4>
+            <a target="_blank" href="https://www.facebook.com/taffoakfield/" ><h4 id="facebook">FACEBOOK</h4></a>
+         </div>
+      </footer>
+
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous">
@@ -92,8 +70,5 @@
          ScrollReveal().reveal('.galImage');
       </script>
       <script src="./Javascript/jquery.magnific-popup.min.js"></script>
-      <script>
-         
-      </script>
    </body>
 </html>
