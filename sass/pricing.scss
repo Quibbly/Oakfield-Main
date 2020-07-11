@@ -152,9 +152,31 @@ footer{
 @media only screen and (min-width:1400px) {
    #main-section{
       .catDivContent{
+         width:70%;
+         display:flex;
+         flex-direction: initial;
+         flex-wrap: wrap;
+         
          .albumCollection{
-            width:60%;
+            width:45%;
+            margin-bottom:-22px;
+            max-height: 370px;
+            img{
+               max-width:100%;
+            }
          }
+      }
+      .albumsContentHidden {
+         display: none;
+      }
+      .weddingImagesContentHidden {
+         display: none;
+      }
+      .headshotsContentHidden {
+         display: none;
+      }   
+      .babyContentHidden {
+         display: none;
       }
    }
 }
