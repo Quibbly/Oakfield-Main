@@ -322,6 +322,13 @@ footer a {
   height: 800px;
 }
 
+nav li:nth-child(1) {
+  background-color: #404447;
+}
+nav li:nth-child(3) {
+  background-color: rgba(138, 138, 138, 0.466);
+}
+
 @media only screen and (min-width: 900px) {
   .mainInfoContainer {
     width: 70%;
