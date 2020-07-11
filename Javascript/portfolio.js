@@ -9,6 +9,7 @@ let portfolioGallery = document.querySelector('.port-gallery');
 let submitValue = '';
 const defaultCat = "wedding";
 
+
 function readCookie(name) {
 	var nameEQ = name + "=";
 	var ca = document.cookie.split(';');
@@ -20,7 +21,6 @@ function readCookie(name) {
 	return defaultCat;
 }
 
-
 setButtonState=(state) => {
    if(state === 'wedding'){
       let selectedButton = document.querySelector(".sort-buttons-container button[1]");
@@ -31,26 +31,35 @@ setButtonState=(state) => {
       console.log('no');
    }
 }
+const selectedButtonContainer = document.querySelectorAll("#sort-buttons-container button");
+removeButtonHighlight = () =>{
+   selectedButtonContainer[0].style.backgroundColor = "#404447";
+   selectedButtonContainer[0].style.color = "#EAEAEA";
+   selectedButtonContainer[1].style.backgroundColor = "#404447";
+   selectedButtonContainer[1].style.color = "#EAEAEA";
+   selectedButtonContainer[2].style.backgroundColor = "#404447";
+   selectedButtonContainer[2].style.color = "#EAEAEA";
+   selectedButtonContainer[3].style.backgroundColor = "#404447";
+   selectedButtonContainer[3].style.color = "#EAEAEA";
+}
 
-fetchGalleryImages=(categoryInput)=>{
-   if(categoryInput){
-      submitValue = categoryInput;
-   } else {
-      submitValue = localStorage.getItem("storageName"); 
-   }
-
-   const selectedButtonContainer = document.querySelectorAll(".sort-buttons-container button");
+fetchGalleryImages=(submitValue)=>{
+   removeButtonHighlight();
    if(submitValue == 'wedding'){
-      selectedButtonContainer[0].focus();
+      selectedButtonContainer[0].style.backgroundColor = "#EAEAEA";
+      selectedButtonContainer[0].style.color = "#404447";
    }
    else if(submitValue == 'baby'){
-      selectedButtonContainer[1].focus();
+      selectedButtonContainer[1].style.backgroundColor = "#EAEAEA";
+      selectedButtonContainer[1].style.color = "#404447";
    }
    else if(submitValue == 'headshot'){
-      selectedButtonContainer[2].focus();
+      selectedButtonContainer[2].style.backgroundColor = "#EAEAEA";
+      selectedButtonContainer[2].style.color = "#404447";
    }
    else if(submitValue == 'special'){
-      selectedButtonContainer[3].focus();
+      selectedButtonContainer[3].style.backgroundColor = "#EAEAEA";
+      selectedButtonContainer[3].style.color = "#404447";
    }
    else{
       selectedButtonContainer[0].focus();
@@ -104,29 +113,18 @@ fetchGalleryImages=(categoryInput)=>{
       .then(data=>{
          $('.test-popup-link').magnificPopup({
             type: 'image',
-            // other options
             gallery: {
-               // options for gallery
                enabled: true
             },
             zoom: {
-               enabled: true, // By default it's false, so don't forget to enable it
-               duration: 300, // duration of the effect, in milliseconds
-               easing: 'ease-in-out', // CSS transition easing function
-               // The "opener" function should return the element from which popup will be zoomed in
-               // and to which popup will be scaled down
-               // By defailt it looks for an image tag:
+               enabled: true,
+               duration: 300,
+               easing: 'ease-in-out', 
                opener: function(openerElement) {
-                  // openerElement is the element on which popup was initialized, in this case its <a> tag
-                  // you don't need to add "opener" option if this code matches your needs, it's defailt one.
                   return openerElement.is('img') ? openerElement : openerElement.find('img');
                }
             }
          });
-         function eraseCookie(name) {
-            createCookie(name,"",-1);
-         }
-         eraseCookie('portfolioSubCategory');
       })
       .catch(err=>{
          console.log(err)
