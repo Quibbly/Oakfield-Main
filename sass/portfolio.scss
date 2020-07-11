@@ -8,7 +8,7 @@
    justify-content: space-evenly;
    margin-top:50px;
    margin-bottom: 60px;
-   background-color: $lightColor;
+   background-color: $primaryColor;
    flex-wrap: wrap;
    button {
       box-shadow:black;
@@ -21,7 +21,7 @@
       color: $lightColor;
       border-bottom: 1px solid transparent;
       transition: all ease-in-out 0.5s;
-      background-color: $darkColor;
+      background-color: $lightColor;
       height:50px;
       width:20%;
       min-width: 100px;
@@ -29,14 +29,14 @@
       cursor: pointer;
    }
    button:hover {
-      border-color: $lightColor;
+      border-color: $darkColor;
    }
    button:active {
-      background-color: $lightColor;
+      background-color: $darkColor;
    }
 }
 .buttonCurrent{
-   background-color: $lightColor;
+   background-color: $darkColor;
    display:none
 }
 .port-gallery{
@@ -67,6 +67,14 @@
 }
 .removedImg {
    opacity: 0;
+}
+nav{
+   li:nth-child(1){
+      background-color: $darkColor;
+   }
+   li:nth-child(2){
+      background-color: rgba(138, 138, 138, 0.466);
+   }
 }
 
 @media only screen and (min-width:500px) {
