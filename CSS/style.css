@@ -680,5 +680,118 @@ footer a {
     bottom: 1050px;
   }
 }
+@media only screen and (min-width: 1700px) {
+  #portfolioLinksContainerMain {
+    width: 80%;
+    position: relative;
+    bottom: 39px;
+    padding-top: 29px;
+    margin: 0 auto;
+    background-color: #EAEAEA;
+    margin-bottom: -130px;
+  }
+  #portfolioLinksContainerMain #portfolioLinksContainer {
+    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "weddingPortLink childrenPortLink" "headshotsPortLink specialPortLink";
+    margin: 0 auto;
+    width: 98%;
+    margin-top: 120px;
+  }
+  #portfolioLinksContainerMain #portfolioLinksContainer a {
+    color: inherit;
+    text-decoration: none;
+  }
+  #portfolioLinksContainerMain .portfolioLink {
+    width: 90%;
+    height: auto;
+    margin: 5px;
+    margin: 0 auto;
+  }
+  #portfolioLinksContainerMain .portfolioLink h4 {
+    transition: all 0.2s ease-in-out;
+  }
+  #portfolioLinksContainerMain .portfolioLink:hover h4 {
+    color: #ada201;
+  }
+  #portfolioLinksContainerMain .port-link-image {
+    width: 100%;
+    height: 600px;
+    z-index: -1;
+    border-radius: 10px 10px 0px 0px;
+  }
+  #portfolioLinksContainerMain .linkTitleCircleCutout {
+    background-color: #EAEAEA;
+    border-radius: 100%;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 870px;
+  }
+  #portfolioLinksContainerMain .linkTitleCircle {
+    background-color: #1f313f;
+    border-radius: 100%;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+    text-align: center;
+  }
+  #portfolioLinksContainerMain .linkTitleCircle h4 {
+    padding-top: 55px;
+    color: #EAEAEA;
+    font-family: "Playball", cursive;
+    font-size: 1.3rem;
+  }
+  #portfolioLinksContainerMain #weddingPortLink {
+    background: url("../img/wedding-header-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-area: weddingPortLink;
+  }
+  #portfolioLinksContainerMain #childrenPortLink {
+    background: url("../img/child-header-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-area: childrenPortLink;
+  }
+  #portfolioLinksContainerMain #headshotsPortLink {
+    background: url("../img/headshot-header-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-area: headshotsPortLink;
+  }
+  #portfolioLinksContainerMain #specialPortLink {
+    background: url("../img/special-header-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    grid-area: specialPortLink;
+  }
+  #portfolioLinksContainerMain .linkTextBlock {
+    background-color: #1f313f;
+    height: 25%;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: -60px;
+    border-radius: 0 0 10px 10px;
+  }
+  #portfolioLinksContainerMain .linkTextBlock p {
+    color: #EAEAEA;
+    font-size: 1.2rem;
+    max-width: 80%;
+    margin: 0 auto;
+    transition: all 0.2s ease-in-out;
+    padding: 50px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
