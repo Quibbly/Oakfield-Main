@@ -33,7 +33,7 @@ header h1 {
   bottom: 30px;
 }
 header #fullPageImage {
-  background-image: url("../img/mainPageImage.png");
+  background-image: url("../img/mainPageImage.jpg");
   height: 100%;
   width: 100%;
   z-index: -1;
