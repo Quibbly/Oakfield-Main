@@ -206,7 +206,6 @@ nav {
   margin: 0 auto;
   position: relative;
   bottom: 680px;
-  left: 100px;
 }
 #portfolioLinksContainerMain .linkTitleCircle {
   background-color: #1f313f;
@@ -373,6 +372,18 @@ footer a {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 899px) {
+  .linkTitleCircleCutout {
+    background-color: #EAEAEA;
+    border-radius: 100%;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 680px;
+    left: 100px;
+  }
+}
 @media only screen and (min-width: 900px) {
   #mobileMenuToggle {
     display: none;
@@ -417,7 +428,7 @@ footer a {
   }
 
   #portfolioLinksContainerMain {
-    width: 70%;
+    width: 80%;
   }
 
   #aboutUs {
