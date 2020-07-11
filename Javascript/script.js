@@ -1,6 +1,10 @@
 function scrollDown() {
    document.body.scrollTop = 0; // For Safari
-   document.documentElement.scrollTop = 1030; // For Chrome, Firefox, IE and Opera
+   if(screen.width>=1920)
+   {
+      document.documentElement.scrollTop = 1020; // For Chrome, Firefox, IE and Opera
+   }
+   
 } 
 
 portfolioCategorySet = (category) => {
