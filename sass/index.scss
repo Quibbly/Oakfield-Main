@@ -298,6 +298,7 @@ nav{
    font-size: 1.2rem;
    padding-bottom:20px;
    margin-top: -70px;
+   font-weight: bold;
 
    h3{
       font-size: 1.9rem;
@@ -499,6 +500,7 @@ footer{
       flex-direction: row;
       padding-top:100px;
       padding-bottom:100px;
+      font-weight: bold;
       div:first-of-type {
          margin:0 auto;
          width:40%;
@@ -688,6 +690,7 @@ footer{
          margin:0 auto;
          margin-bottom: -60px;
          border-radius: 0 0 10px 10px;
+         font-weight: bold;
          p{
             color: $lightColor;
             font-size:1.2rem;

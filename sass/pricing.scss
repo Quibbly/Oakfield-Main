@@ -9,243 +9,152 @@ nav{
    }
 }
 
-.first-section{
-   width:99%;
-   max-width:1000px;
-   margin:0 auto;
-   margin-top:100px;
-   display: flex;
-   flex-wrap: wrap;
-   min-height: 540px;
-}
-.catDivButton {
-   width:95%;
-   height:100px;
-   text-align: center;
-   background-color: $darkColor;
-   color: $lightColor;
-   transition: all .2s ease-in-out; 
-   cursor: pointer;
-   margin:0 auto;
-   border-radius: 5px;
-}
-.catDivButton h2 {
-   padding-top:10px;
-}
-.catDivButton:hover{
-   transform: scale(1.05);
-   color: $popColor;
+footer{
+   margin-top:10%;
 }
 
-.albumsContentHidden {
-   display:none;
-}
-.weddingImagesContentHidden {
-   display:none;
-}
-.headshotsContentHidden {
-   display:none;
-}
-.babyContentHidden {
-   display:none;
-}
-
-.albumsContentRevealed {
-   display: flex;
-   width: 100%;
-   height: auto;
-   display:flex;
-   flex-wrap: wrap;
-}
-.weddingImagesContentRevealed {
-   display: flex;
-   width: 100%;
-   height: auto;
-   display:flex;
-   flex-wrap: wrap;
-}
-.headshotsContentRevealed {
-   display: flex;
-   width: 100%;
-   height: auto;
-   display:flex;
-   flex-wrap: wrap;
-}
-.babyContentRevealed {
-   display: flex;
-   width: 100%;
-   height: auto;
-   display:flex;
-   flex-wrap: wrap;
-}
-
-
-
-
-.albumCollection {
-   margin:0 auto;
-   background-color: $lightColor;
-   width:98%;
-   border:3px solid $darkColor;
-   border-radius: 3px;
-   display: flex;
-   flex-wrap: wrap;
-   margin-bottom: 3px;
-}
-.albumCollection span{
+#main-section{
    width:100%;
-   height: 150px;
-   text-align: center;
-   font-size: 1.3rem;
-   margin-bottom: 16px;
-}
-.albumCollection img{
-   width:98%;
-   margin: 0 auto;
-   margin-bottom:20px;
-   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
-   object-fit: cover;
-}
-.albumCollection ul{
-   width:100%;
-   font-size: 1rem;
-}
-.albumCollection li{
-   margin-bottom: 6px;
-}
+   margin:0 auto;
+   display: flex;
+   flex-direction: column;
+   height:100%;
 
+   .catDivButton{
+      z-index: 2;
+      width:60%;
 
-
-@media only screen and (min-width:900px) {
-   .first-section{
-      width:70%;
-      max-width:1000px;
       margin:0 auto;
-      margin-top:100px;
-      display: flex;
-      flex-wrap: wrap;
-   }
-   .catDivButton {
-      width:70%;
-      height:100px;
-      text-align: center;
-      background-color: $darkColor;
+      background-color: $primaryColor;
       color: $lightColor;
-      transition: all .2s ease-in-out; 
-      cursor: pointer;
-      margin:0 auto;
-      margin-bottom: 30px;
-      border-radius: 6px;
+      border-radius: 5px;
+      max-width: 600px;
+      margin-top:10%;
+      border-bottom: 1px solid transparent;
+      transition: all ease-in-out 0.5s;
+      outline:none;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
-      font-size: 0.8rem;
-      margin-top: 15px;
-   }
-   .catDivButton h2 {
-      padding-top:10px;
+      cursor: pointer;
    }
    .catDivButton:hover{
-      transform: scale(1.05);
-      color:$popColor;
+      background-color: #EAEAEA;
+      color: $darkColor;
    }
+   .catDivContent{
+      margin:0 auto;
+      display:flex;
+      flex-direction: column;
+      width:100%;
 
+      .albumCollection{
+         width:85%;
+         margin:0 auto;
+         display:flex;
+         flex-direction: column;
+         margin-top: 50px;
+         margin-bottom: 0px;
+         background-color: $lightColor;
+         padding:20px;
+         padding-bottom:70px;
+         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
+         border-radius: 10px;
+         span {
+            width: 100%;
+            margin:0 auto;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+            h3{
+               width:100%;
+               font-size: 1.8rem;
+            }
+            p{
+               font-size: 1.1rem;
+            }
+         }
+         img{
+            max-width:95%;
+
+            margin:0 auto;
+            margin-bottom: 20px;
+         }
+         ul{
+            li{
+               margin-bottom:10px;
+               font-weight: bold;
+            }
+         }
+      }
+   }
    .albumsContentHidden {
-      display:none;
+      display: none;
    }
    .weddingImagesContentHidden {
-      display:none;
+      display: none;
    }
    .headshotsContentHidden {
-      display:none;
-   }
+      display: none;
+   }   
    .babyContentHidden {
-      display:none;
-   }
-
-   .albumsContentRevealed {
-      display: flex;
-      width: 100%;
-      height: auto;
-      display:flex;
-      flex-wrap: wrap;
-   }
-   .weddingImagesContentRevealed {
-      display: flex;
-      width: 100%;
-      height: auto;
-      display:flex;
-      flex-wrap: wrap;
-   }
-   .headshotsContentRevealed {
-      display: flex;
-      width: 100%;
-      height: auto;
-      display:flex;
-      flex-wrap: wrap;
-   }
-   .babyContentRevealed {
-      display: flex;
-      width: 100%;
-      height: auto;
-      display:flex;
-      flex-wrap: wrap;
-   }
-
-
-
-
-   .albumCollection {
-      margin:0 auto;
-      background-color: $lightColor;
-      width:93%;
-      border:3px solid $darkColor;
-      border-radius: 3px;
-      display: flex;
-      flex-wrap: wrap;
-      padding:25px;
-      margin-bottom: 5px;
-   }
-   .albumCollection span{
-      width:100%;
-      height: 150px;
-      text-align: center;
-      font-size: 1.3rem;
-   }
-   .albumCollection img{
-      width:60%;
-      margin-left:10px;
-      margin-bottom:20px;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
-      object-fit: cover;
-   }
-   .albumCollection ul{
-      width:30%;
-      margin-left:20px;
-      font-size: 1.2rem;
-   }
-   .albumCollection li{
-      padding-bottom:20px;
-   }
-
-}
-
-@media only screen and (max-width:1100px) {
-   .albumCollection img{
-      width:40%;
-      margin-left:10px;
-      margin-bottom:20px;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
-      object-fit: cover;
-   }
-   .albumCollection ul{
-      width:40%;
-      margin-left:20px;
-      font-size: 1.2rem;
+      display: none;
    }
 }
+
 @media only screen and (min-width:900px) {
-   iframe {
-      height:700px;
+   footer{
+      margin-top:10%;
    }
+   #main-section{
+      .catDivButton{
+         width:60%;
+         margin:0 auto;
+         background-color: $primaryColor;
+         color: $lightColor;
+         border-radius: 5px;
+         max-width: 600px;
+         margin-top:3%;
+      }
 
+      .catDivContent{
+         .albumCollection{
+            width:80%;
+            margin:0 auto;
+            display: grid;
+            grid-auto-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 1px 1px;
+            grid-template-areas: "span span" "img ul" "img ul";
+            margin-top: 50px;
+            margin-bottom: 0px;
+            max-width: 900px;
+            span {
+               grid-area: span;
+               min-width: 150%;
+               margin:0 auto;
+               margin-left:27%;
+               margin-bottom: 0px;
+            }
+            img{
+               grid-area: img;
+               max-width:90%;
+               margin:0 auto;
+            }
+            ul{
+               grid-area: ul;
+               li{
+                  margin-bottom:10px;
+               }
+            }
+         }
+      }
+   }
 }
-
+@media only screen and (min-width:1400px) {
+   #main-section{
+      .catDivContent{
+         .albumCollection{
+            width:60%;
+         }
+      }
+   }
+}
