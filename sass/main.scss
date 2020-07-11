@@ -5,7 +5,9 @@ $lightColor:#EAEAEA;
 $popColor:rgb(173, 162, 1);
 $infoTextFontSize:1rem;
 $mobileWidth:99%;
-$desktopWidth:80%;
+$desktopWidth:70%;
+$mobileHeaderHeight:30%;
+$desktopHeaderHeight:18%;
 
 html {
    height:100%;
@@ -29,9 +31,11 @@ body {
 }
 
 header{
+   background-color: $lightColor;
+   max-height:100px;
    flex-shrink: 0;
    width:100%;
-   min-height:100%;
+   min-height:$mobileHeaderHeight;
    text-align: center;
    h1{
       font-family: 'Playball', cursive;
@@ -67,7 +71,6 @@ header{
       transform: scale(1.1);
    }
 }
-
 
 #mobileMenuToggle{
    display:block;
@@ -153,230 +156,8 @@ header{
    }
 }
 
-
-
 nav{
    display:none;
-}
-
-#content {
-   #h2Container{
-      background-color: $primaryColor;
-      text-align: center;
-      color: $lightColor;
-      width:100%;
-      position: relative;
-      bottom:20px;
-   }
-   h2{
-      padding:40px;
-   }
-}
-
-#portfolioLinksContainerMain{
-   width:$mobileWidth;
-   position: relative;
-   bottom:39px;
-   padding-top:29px;
-   margin:0 auto;
-   background-color: $lightColor;
-
-   #portfolioLinksContainer {
-      display:block;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      gap: 1px 1px;
-      grid-template-areas: "weddingPortLink" "childrenPortLink" "headshotsPortLink" "specialPortLink";
-      margin:0 auto;
-      width:98%;
-      margin-top: 120px;
-      a { 
-         color: inherit; 
-         text-decoration: none;
-      } 
-   }
-
-   .portfolioLink {
-      width:$mobileWidth;
-      height:auto;
-      margin:5px;
-      margin:0 auto;
-      h4{
-         transition: all .2s ease-in-out;
-      }
-   }
-   .portfolioLink:hover{
-      h4{
-         color:$popColor
-      }
-   }
-   .port-link-image{
-      width:100%;
-      height:510px;
-      z-index: -1;
-      border-radius: 10px 10px 0px 0px;
-   }
-   .linkTitleCircleCutout{
-      background-color: $lightColor;
-      border-radius: 100%;
-      width:160px;
-      height:160px;
-      margin:0 auto;
-      position: relative;
-      bottom:680px;
-      left:100px;
-   }
-   .linkTitleCircle{
-      background-color: $primaryColor;
-      border-radius: 100%;
-      width:140px;
-      height:140px;
-      margin:0 auto;
-      position: relative;
-      top:10px;
-      text-align: center;
-      h4 {
-         padding-top:55px;
-         color: $lightColor;
-         font-family: 'Playball', cursive;
-         font-size: 1.3rem;
-      }
-   }
-   #weddingPortLink {
-      background: url('../img/wedding-header-image.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position:center;
-      grid-area: weddingPortLink;
-   }
-   #childrenPortLink {
-      background: url('../img/child-header-image.jpg'); 
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position:center;
-      grid-area: childrenPortLink;
-   }
-   #headshotsPortLink {
-      background: url('../img/headshot-header-image.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center; 
-      grid-area: headshotsPortLink;
-   }
-   #specialPortLink {
-      background: url('../img/special-header-image.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position:center top;
-      grid-area: specialPortLink;
-   }
-   .linkTextBlock{
-      background-color: $primaryColor;
-      height:18%;
-      width:100%;    
-      margin:0 auto;
-      margin-bottom: -60px;
-      border-radius: 0 0 10px 10px;
-      p{
-         color: $lightColor;
-         font-size:1.2rem;
-         max-width: 80%;
-         margin:0 auto;
-         transition: all .2s ease-in-out;
-         padding:20px;
-      }
-   }  
-}
-
-#aboutUs{
-   width:$mobileWidth;
-   height:500px;
-   margin:0 auto;
-   background-color: $lightColor;
-   text-align: center;
-   font-size: 1.2rem;
-   padding-bottom:20px;
-   margin-top: -70px;
-
-   h3{
-      font-size: 1.9rem;
-   }
-   p{
-      width:80%;
-      margin:0 auto;
-      max-width: 900px;
-   }
-}
-
-#blowUpImage{
-   width:$mobileWidth;
-   margin:0 auto;
-   height:600px;
-   background-image: url("../img/mainPage/blowup.jpg");
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-}
-
-#photographerBio{
-   display:none;
-}
-
-#smallGallery{
-   width:$mobileWidth;
-   background-color: $lightColor;
-   margin:0 auto;
-   margin-top:0px;
-   display:flex;
-   flex-wrap: wrap;
-
-   a{
-      width:50%;
-      margin:0 auto;
-   }
-   img{
-      width:100%;
-      margin:0 auto;
-   }
-}
-
-#locationInfo{
-   margin:0 auto;
-   margin-top:-5px;
-   background-color: $lightColor;
-   text-align: center;
-   padding-top:80px;
-   padding-bottom: 50px;
-   font-weight: bold;
-   width:$mobileWidth;
-   h3{
-      background-color: $primaryColor;
-      width:85%;
-      margin:0 auto;
-      color: $lightColor;
-      padding:20px;
-      border-radius: 5px 5px 0px 0px;
-   }
-   div{
-      border:3px solid $primaryColor;
-      border-radius: 0px 0px 5px 5px;
-      width:85%;
-      margin:0 auto;
-      padding:17px;
-      p{
-         margin:0 auto;
-         width:70%;
-         font-size: 1.3rem;
-         padding:20px;
-      }
-      a{
-         position: relative;
-         right:20px;
-         color: inherit; 
-         text-decoration: none;
-      }
-   }
 }
 
 footer{
@@ -395,22 +176,20 @@ footer{
    }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+// MEDIA QUERIES
+@media only screen and (min-width:600px) {
+   header{
+      min-height:20%;
+   }
+}
 @media only screen and (min-width:900px) {
    // * MOBILE HAMBURGER MENU - DOWN*/
    #mobileMenuToggle{
       display:none;
+   }
+
+   header{
+      min-height:$desktopHeaderHeight;
    }
 
    nav{
@@ -448,258 +227,6 @@ footer{
       }
       a:hover {
          border-color: $lightColor;
-      }
-   }
-   #portfolioLinksContainerMain{
-      width:70%;
-   }
-   #aboutUs{
-      width:$desktopWidth;
-      height:300px;
-      margin:0 auto;
-      background-color: $lightColor;
-      text-align: center;
-      padding-top: 50px;
-      font-size: 1.2rem;
-      padding-bottom:20px;
-      margin-top: -40px;
-      h3{
-         font-size: 1.9rem;
-      }
-      p{
-         width:80%;
-         margin:0 auto;
-         max-width: 900px;
-      }
-   }
-   #blowUpImage{
-      width:$desktopWidth;
-   }
-   #photographerBio{
-      display:block;
-      width:$desktopWidth;
-      margin:0 auto;
-      background-color: $lightColor;
-      text-align: center;
-      font-size: 1.2rem;
-      margin-top: 0px;
-      display:flex;
-      flex-direction: row;
-      padding-top:100px;
-      padding-bottom:100px;
-      div:first-of-type {
-         margin:0 auto;
-         width:40%;
-         max-width: 500px;
-         height:100%;
-         position: relative;
-         left:5%;
-      }
-      div:last-of-type {
-         margin:0 auto;
-         width:30%;
-         position: relative;
-         right:5%;
-         max-height: 100%;
-         max-width: 500px;
-      }
-      p{
-         width:100%;
-         height:100%;
-      }
-      p::before{
-         content: open-quote;
-         font-size:2rem;
-      }
-      p::after{
-         content: close-quote;
-         font-size: 2rem;
-      }
-      img{
-         width:100%;
-         
-      }
-      width:$desktopWidth;
-      div:first-of-type {
-         width:40%;
-         max-width: 500px;
-         height:100%;
-         position: relative;
-         left:5%;
-      }
-      div:last-of-type {
-         margin:0 auto;
-         width:40%;
-         position: relative;
-         right:5%;
-      }
-   }
-   #smallGallery{
-      width:$desktopWidth;
-   }
-   #locationInfo{
-      width:$desktopWidth;
-      margin:0 auto;
-      margin-top:-5px;
-      background-color: $lightColor;
-      text-align: center;
-      padding-top:80px;
-      padding-bottom: 50px;
-      font-weight: bold;
-      h3{
-         background-color: $primaryColor;
-         width:60%;
-         margin:0 auto;
-         color: $lightColor;
-         padding:20px;
-         border-radius: 5px 5px 0px 0px;
-      }
-      div{
-         border:3px solid $primaryColor;
-         border-radius: 0px 0px 5px 5px;
-         width:60%;
-         margin:0 auto;
-         padding:17px;
-         p{
-            margin:0 auto;
-            width:70%;
-            font-size: 1.3rem;
-            padding:20px;
-         }
-         a{
-            color: inherit; 
-            text-decoration: none;
-         }
-      }
-   }
-}
-@media only screen and (min-width:1100px) {
-   #portfolioLinksContainerMain{
-      width:80%;
-      position: relative;
-      bottom:39px;
-      padding-top:29px;
-      margin:0 auto;
-      background-color: $lightColor;
-      #portfolioLinksContainer {
-         display:block;
-         display: grid;
-         grid-template-columns: 1fr 1fr;
-         grid-template-rows: 1fr 1fr;
-         gap: 1px 1px;
-         grid-template-areas: "weddingPortLink childrenPortLink" "headshotsPortLink specialPortLink";
-         margin:0 auto;
-         width:98%;
-         margin-top: 120px;
-         a { 
-            color: inherit; 
-            text-decoration: none;
-         } 
-      }
-      .portfolioLink {
-         width:90%;
-         height:auto;
-         margin:5px;
-         margin:0 auto;
-         h4{
-            transition: all .2s ease-in-out;
-         }
-      }
-      .portfolioLink:hover{
-         h4{
-            color:$popColor;
-         }
-      }
-      .port-link-image{
-         width:100%;
-         height:600px;
-         z-index: -1;
-         border-radius: 10px 10px 0px 0px;
-      }
-      .linkTitleCircleCutout{
-         background-color: $lightColor;
-         border-radius: 100%;
-         width:160px;
-         height:160px;
-         margin:0 auto;
-         position: relative;
-         bottom:870px;
-      }
-      .linkTitleCircle{
-         background-color: $primaryColor;
-         border-radius: 100%;
-         width:140px;
-         height:140px;
-         margin:0 auto;
-         position: relative;
-         top:10px;
-         text-align: center;
-         h4 {
-            padding-top:55px;
-            color: $lightColor;
-            font-family: 'Playball', cursive;
-            font-size: 1.3rem;
-         }
-      }
-      #weddingPortLink {
-         background: url('../img/wedding-header-image.jpg');
-         background-repeat: no-repeat;
-         background-size: cover;
-         background-position:center;
-         grid-area: weddingPortLink;
-      }
-      #childrenPortLink {
-         background: url('../img/child-header-image.jpg'); 
-         background-repeat: no-repeat;
-         background-size: cover;
-         background-position:center;
-         grid-area: childrenPortLink;
-      }
-      #headshotsPortLink {
-         background: url('../img/headshot-header-image.jpg');
-         background-repeat: no-repeat;
-         background-size: cover;
-         background-position: center; 
-         grid-area: headshotsPortLink;
-      }
-      #specialPortLink {
-         background: url('../img/special-header-image.jpg');
-         background-repeat: no-repeat;
-         background-size: cover;
-         background-position:center top;
-         grid-area: specialPortLink;
-      }
-      .linkTextBlock{
-         background-color: $primaryColor;
-         height:25%;
-         width:100%;    
-         margin:0 auto;
-         margin-bottom: -60px;
-         border-radius: 0 0 10px 10px;
-         p{
-            color: $lightColor;
-            font-size:1.2rem;
-            max-width: 80%;
-            margin:0 auto;
-            transition: all .2s ease-in-out;
-            padding:50px;
-         }
-      }  
-   }
-}
-@media only screen and (min-width:1600px) {
-   #portfolioLinksContainerMain{
-      .port-link-image{
-         height:750px;
-      }
-      .linkTitleCircleCutout{
-         background-color: $lightColor;
-         border-radius: 100%;
-         width:160px;
-         height:160px;
-         margin:0 auto;
-         position: relative;
-         bottom:1050px;
       }
    }
 }
