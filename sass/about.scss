@@ -1,0 +1,130 @@
+@import 'main';
+$mobileElementWidth:90%;
+.mainInfoContainer{
+   width:$mobileWidth;
+   margin: 0 auto;
+   text-align: center;
+   margin-top:50px;
+   color: $lightColor;
+   font-size: 0.9rem;
+
+   #infoBlockOne{
+      h2{
+         background-color: $primaryColor;
+         margin:0 auto;
+         width:$mobileElementWidth;
+         padding:20px;
+      }
+      span{
+         display: block;
+         width:$mobileElementWidth;
+         padding:20px;
+         background-color: $lightColor;
+         color: $darkColor;
+         margin:0 auto;
+         font-size: 1.15rem;
+         font-weight: bold;
+         text-align: left;
+         p{
+            width:80%;
+            padding:30px;
+            margin:0 auto;
+            max-width: 600px;
+         }
+      }
+   }
+
+   #infoBlockTwo{
+      h2{
+         background-color: $primaryColor;
+         margin:0 auto;
+         width:$mobileElementWidth;
+         padding:20px;
+         margin-top:80px;
+      }
+      div:first-of-type{
+         margin:0 auto;
+         border-radius: 10px;
+         width:$mobileElementWidth;
+         padding:20px;
+         background-color: $lightColor;
+         img{
+            border-radius: 50px;
+            width:100%;
+            max-width: 500px;
+         }
+      }
+      h3{
+         background-color: $lightColor;
+         width:$mobileElementWidth;
+         padding:20px;
+         margin:0 auto;
+         color: $darkColor;
+         font-size: 1.4rem;
+         margin-bottom:-20px;
+      }
+      span{
+         display: block;
+         width:$mobileElementWidth;
+         padding:20px;
+         background-color: $lightColor;
+         color: $darkColor;
+         margin:0 auto;
+         font-size: 1.15rem;
+         font-weight: bold;
+         text-align: left;
+         p{
+            width:80%;
+            padding:20px;
+            margin:0 auto;
+            max-width: 600px;
+         }
+      }
+   }
+
+   #infoBlockThree{
+      h2{
+         background-color: $primaryColor;
+         margin:0 auto;
+         width:$mobileElementWidth;
+         padding:20px;
+         margin-top:80px;
+      }
+      span{
+         display: block;
+         width:$mobileElementWidth;
+         padding:20px;
+         background-color: $lightColor;
+         color: $darkColor;
+         margin:0 auto;
+         font-size: 1.15rem;
+         font-weight: bold;
+         text-align: center;
+         p{
+            width:80%;
+            padding:20px;
+            margin:0 auto;
+            max-width: 600px;
+         }
+      }
+      iframe{
+         margin-top:80px;
+         width:99%;
+         height:800px;
+      }
+   }
+}
+
+// MEDIA QUERIES
+@media only screen and (min-width:900px) {
+   .mainInfoContainer{
+      width:$desktopWidth;
+   }
+   iframe{
+      margin-top:80px;
+      width:90%;
+      height:800px;
+   }
+}
+
+
