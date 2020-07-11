@@ -1,0 +1,21 @@
+{
+  "name": "Oakfield-Photography",
+  "version": "1.0.0",
+  "description": "A website created for Oakfield Photography, fully responsive, featuring the google maps api and a filterable portfolio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-SASS": "sass --watch sass/index.scss:css/style.css sass/about.scss:css/about.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OwenM-Edwards/Oakfield-Photography.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OwenM-Edwards/Oakfield-Photography/issues"
+  },
+  "homepage": "https://github.com/OwenM-Edwards/Oakfield-Photography#readme"
+}
