@@ -224,7 +224,7 @@ footer a {
   justify-content: space-evenly;
   margin-top: 50px;
   margin-bottom: 60px;
-  background-color: #EAEAEA;
+  background-color: #1f313f;
   flex-wrap: wrap;
 }
 #sort-buttons-container button {
@@ -238,7 +238,7 @@ footer a {
   color: #EAEAEA;
   border-bottom: 1px solid transparent;
   transition: all ease-in-out 0.5s;
-  background-color: #404447;
+  background-color: #EAEAEA;
   height: 50px;
   width: 20%;
   min-width: 100px;
@@ -246,14 +246,14 @@ footer a {
   cursor: pointer;
 }
 #sort-buttons-container button:hover {
-  border-color: #EAEAEA;
+  border-color: #404447;
 }
 #sort-buttons-container button:active {
-  background-color: #EAEAEA;
+  background-color: #404447;
 }
 
 .buttonCurrent {
-  background-color: #EAEAEA;
+  background-color: #404447;
   display: none;
 }
 
@@ -288,6 +288,13 @@ footer a {
 
 .removedImg {
   opacity: 0;
+}
+
+nav li:nth-child(1) {
+  background-color: #404447;
+}
+nav li:nth-child(2) {
+  background-color: rgba(138, 138, 138, 0.466);
 }
 
 @media only screen and (min-width: 500px) {
