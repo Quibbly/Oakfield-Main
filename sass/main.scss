@@ -32,6 +32,7 @@ body {
 
 header{
    background-color: $lightColor;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
    max-height:100px;
    flex-shrink: 0;
    width:100%;
