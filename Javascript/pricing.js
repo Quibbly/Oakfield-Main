@@ -1,3 +1,5 @@
+// Controls the revealing of album information.
+// (cat) is the category to reveal, as provided by relevant button.
 function reveal(cat) {
    var catBox = document.querySelector("."+cat+"Content");
 
