@@ -1,15 +1,20 @@
-
-let wedding = '/wedding/';
-let child = '/child/';
-let special = '/special/';
-let headshot = '/headshot/'; 
+// Links to local folders for corrosponding gallery categories.
+// used to path to them.
+const wedding = '/wedding/';
+const child = '/child/';
+const special = '/special/';
+const headshot = '/headshot/'; 
 
 let galleryImages = [];
+// Empty portfolio div.
 let portfolioGallery = document.querySelector('.port-gallery');
 let submitValue = '';
+// If user loads straight into portfolio,
+// will default to wedding category.
 const defaultCat = "wedding";
 
-
+// Reads the category variable cookie, 
+// which is set by page loads and portfolio links.
 function readCookie(name) {
 	var nameEQ = name + "=";
 	var ca = document.cookie.split(';');
@@ -21,16 +26,8 @@ function readCookie(name) {
 	return defaultCat;
 }
 
-setButtonState=(state) => {
-   if(state === 'wedding'){
-      let selectedButton = document.querySelector(".sort-buttons-container button[1]");
-      selectedButton.classList.add("sortButtonSelected");
-      console.log('yes');
-   }
-   else {
-      console.log('no');
-   }
-}
+
+// Resets background color and color of all portfolio category buttons.
 const selectedButtonContainer = document.querySelectorAll("#sort-buttons-container button");
 removeButtonHighlight = () =>{
    selectedButtonContainer[0].style.backgroundColor = "#404447";
@@ -43,8 +40,10 @@ removeButtonHighlight = () =>{
    selectedButtonContainer[3].style.color = "#EAEAEA";
 }
 
+// Fetches gallery images in selected category.
 fetchGalleryImages=(submitValue)=>{
    removeButtonHighlight();
+   // Highlight related category button to show its selected.
    if(submitValue == 'wedding'){
       selectedButtonContainer[0].style.backgroundColor = "#EAEAEA";
       selectedButtonContainer[0].style.color = "#404447";
@@ -65,17 +64,23 @@ fetchGalleryImages=(submitValue)=>{
       selectedButtonContainer[0].focus();
    }
 
+   // Reset gallery images so it can be filled again.
    let galleryImages = [];
 
+   // Hide images, will be revealed slowy after load.
    portfolioGallery.classList.remove("loadedImg");
    portfolioGallery.classList.add("loadingImg");
+
    setTimeout(function()
    { 
+      // Remove all images currently inside galleryImages.
       while (portfolioGallery.firstChild) {
          portfolioGallery.removeChild(portfolioGallery.firstChild);
       }
       portfolioGallery.classList.remove("loadingImg");
       portfolioGallery.classList.add("loadedImg");
+
+      // Fetch new images from server.
       fetch('https://aqueous-badlands-87446.herokuapp.com/getgalleryimages', {
          method: 'post',
          headers: {'Content-Type' : 'application/json'},
