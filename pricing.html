@@ -15,6 +15,8 @@
    <body>
       <header>
          <h1>Oakfield Photography</h1> 
+
+         <!-- Main nav bar for desktop users. -->
          <nav>
             <ul>
                <li> <a href="https://www.oakfield-photography.com/">HOME</a></li>
@@ -23,6 +25,8 @@
                <li> <a href="./pricing">PRICING</a></li>
             </ul>
          </nav>
+
+         <!-- Toggable mobile menu, only appears at mobile res. -->
          <div id="mobileMenuToggle">
             <input type="checkbox" />
             <span></span>
@@ -37,9 +41,11 @@
          </div>
       </header>
 
-
+      <!-- MAIN WRAPPER -->
       <div id="content">
          <div id="main-section">
+
+            <!-- Reveals all content within the albumsContent div -->
             <button onclick="reveal('albums')" class="albums catDivButton">
                <h2>Weddings - Album Packages</h2>
             </button>
@@ -119,6 +125,7 @@
                </div>
             </div>
 
+            <!-- Reveals all content within the weddingImagesContent div -->
             <button onclick="reveal('weddingImages')" class="weddingImages catDivButton">
                <h2>Weddings - Image Only Packages</h2>
             </button>
@@ -169,6 +176,7 @@
                </div>
             </div>
 
+            <!-- Reveals all content within the headshotsContent div -->
             <button onclick="reveal('headshots')" class="headshots catDivButton">
                <h2>Headshot / Studio Sessions</h2>
             </button>
