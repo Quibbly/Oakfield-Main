@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <meta name="description" content="Newport Wales Photographer">
-      <meta name="keywords" content="Newport, wedding, photography, wales, weddings, photography">
+      <meta name="keywords" content="Newport, wedding, photography, wales, weddings, photography, events, studio, freelance, photographer, family">
       <meta name="author" content="Owen Edwards">
       <title>Oakfield Photography</title>
       <link rel="stylesheet" href="./CSS/style.css">
@@ -19,10 +19,14 @@
       />
    </head>
 
+   <!-- On page load sets portfolio category cookie variable to weddings -->
    <body onload="portfolioCategorySet('wedding')">
       <header>
+         <!-- Full page welcome image -->
          <div id="fullPageImage"></div>
          <h1>Oakfield Photography</h1>
+
+         <!-- Main nav bar for desktop users. -->
          <nav>
             <ul>
                <li> <a href="https://www.oakfield-photography.com/">HOME</a></li>
@@ -31,6 +35,8 @@
                <li> <a href="./pricing">PRICING</a></li>
             </ul>
          </nav>
+
+         <!-- Toggable mobile menu, only appears at mobile res. -->
          <div id="mobileMenuToggle">
             <input type="checkbox" />
             <span></span>
@@ -43,12 +49,15 @@
               <a href="./pricing"><li>PRICING</li></a>
             </ul>
          </div>
+         <!-- Arrow that scrolls down past the initial blow up image. -->
          <div onClick="scrollDown()" id="downArrow"><img src="./img/whiteArrow.png" alt=""></div>
       </header>
 
       <!-- MAIN WRAPPER -->
       <div id="content">
          <div id="h2Container"><h2>A Wedding & Family Photographer - South Wales, Newport</h2></div>
+
+         <!-- Custom card style links to the portfolio -->
          <div id="portfolioLinksContainerMain">
             <div id="portfolioLinksContainer">
                <div onClick="portfolioCategorySet('wedding')" id="linkWeddingPortfolio" class="portfolioLink">
@@ -87,8 +96,10 @@
             <p> Oakfield Photography is a family run business, operating in and around Newport, Wales. Our beautiful studio is equipped to handle everything from baby and children shoots, to complex speciality shoots. We have wedding packages to suit all budgets and our style of photography makes every effort not to interfere with the normal flow of your day, adopting a more photo-journalistic approach as much as possible. </p>
          </div>
 
+         <!-- Second blow up image -->
          <div id="blowUpImage"></div>
 
+         <!-- Photographer Bio -->
          <div id="photographerBio" class="infoText">
             <div>
                <img src="./img/photographerPortriat.jpg" alt="Server Error Loading Image">
@@ -98,6 +109,7 @@
             </div>
          </div>
 
+         <!-- Small gallery, uses magnific popup -->
          <div id="smallGallery" class=".popup-link">
             <a class="popup-link" href="./img/mainPage/full/(1).jpg"><img class="mainGallImg" src="./img/mainPage/(1).jpg"/></a>
             <a class="popup-link" href="./img/mainPage/full/(2).jpg"><img  class="mainGallImg" src="./img/mainPage/(2).jpg"/></a>
@@ -107,6 +119,7 @@
             <a class="popup-link" href="./img/mainPage/full/(6).jpg"><img  class="mainGallImg" src="./img/mainPage/(6).jpg"/></a>
          </div>
 
+         <!-- Contact information -->
          <div id="locationInfo" class="infoText">
             <h3>Where to find us..</h2>
             <div>
@@ -127,10 +140,11 @@
          </div>
       </footer>
       
+
       <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="./Javascript/script.js"></script>
-      <script>
-         
+      <!-- Scroll reveal used for smoother of these elements. -->
+      <script>   
          ScrollReveal().reveal('#fullPageImage');
          ScrollReveal().reveal('#h2Container');
          ScrollReveal().reveal('.portfolioLink');
@@ -139,6 +153,8 @@
          ScrollReveal().reveal('.popup-link');
          ScrollReveal().reveal('.contact-details'); 
       </script>
+
+      <!-- Image popup functionality for mainpage gallery. -->
       <script src="./Javascript/jquery.magnific-popup.min.js"></script>
       <script>
          $('.popup-link').magnificPopup({
