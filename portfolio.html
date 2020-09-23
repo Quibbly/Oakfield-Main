@@ -11,10 +11,12 @@
       <link rel="stylesheet" href="./CSS/magnific-popup.css">
       <script src="https://unpkg.com/scrollreveal"></script>
    </head>
-    
+   <!-- On page load, read current portfolio category variable in cookie, set category. -->
    <body onload="fetchGalleryImages(readCookie('portfolioCategory'))">
       <header>
          <h1>Oakfield Photography</h1>
+
+         <!-- Main nav bar for desktop users. -->
          <nav>
             <ul>
                <li> <a href="https://www.oakfield-photography.com/">HOME</a></li>
@@ -23,6 +25,8 @@
                <li> <a href="./pricing">PRICING</a></li>
             </ul>
          </nav>
+
+         <!-- Toggable mobile menu, only appears at mobile res. -->
          <div id="mobileMenuToggle">
             <input type="checkbox" />
             <span></span>
@@ -37,6 +41,7 @@
          </div>
       </header>
 
+      <!-- Portfolio category sort buttons -->
       <div id="content">
          <div id="sort-buttons-container">
             <button onclick="fetchGalleryImages('wedding')" >Wedding</button>
@@ -45,8 +50,8 @@
             <button onclick="fetchGalleryImages('special')">Speciality</button>
          </div>
 
+         <!-- Portfolio image gallery container, filled dynamically by code. -->
          <div class="port-gallery"> </div>
-
       </div>
 
       <!-- FOOTER SECTION -->
