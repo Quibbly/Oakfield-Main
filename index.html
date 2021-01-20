@@ -9,7 +9,7 @@
       <meta name="keywords" content="Newport, wedding, photography, wales, weddings, photography, events, studio, freelance, photographer, family">
       <meta name="author" content="Owen Edwards">
       <title>Oakfield Photography</title>
-      <link rel="stylesheet" href="./CSS/style.css">
+      <link rel="stylesheet" href="./CSS/index.css">
       <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Caveat|Kalam:700|Muli:600|Playball|Radley:400i&display=swap" > 
       <link rel="stylesheet" href="./CSS/magnific-popup.css">
       <script src="https://unpkg.com/scrollreveal"></script>
@@ -20,7 +20,7 @@
    </head>
 
    <!-- On page load sets portfolio category cookie variable to weddings -->
-   <body onload="portfolioCategorySet('wedding')">
+   <body>
       <header>
          <!-- Full page welcome image -->
          <div id="fullPageImage"></div>
@@ -30,7 +30,7 @@
          <nav>
             <ul>
                <li> <a href="https://www.oakfield-photography.com/">HOME</a></li>
-               <li> <a onClick="portfolioCategorySet('wedding')" href="./portfolio">PORTFOLIO</a></li>
+               <li> <a href="./portfolio">PORTFOLIO</a></li>
                <li> <a href="./about">ABOUT US</a></li>
                <li> <a href="./pricing">PRICING</a></li>
             </ul>
@@ -50,9 +50,10 @@
             </ul>
          </div>
          <!-- Arrow that scrolls down past the initial blow up image. -->
-         <div onClick="scrollDown()" id="downArrow"><img src="./img/whiteArrow.png" alt=""></div>
+         <a href="./index.html#anchorPoint"><div id="downArrow"><img src="./img/whiteArrow.png" alt=""></div></a>
+         
       </header>
-
+      <a id="anchorPoint"></a>
       <!-- MAIN WRAPPER -->
       <div id="content">
          <div id="h2Container"><h2>A Wedding & Family Photographer - South Wales, Newport</h2></div>
@@ -60,28 +61,28 @@
          <!-- Custom card style links to the portfolio -->
          <div id="portfolioLinksContainerMain">
             <div id="portfolioLinksContainer">
-               <div onClick="portfolioCategorySet('wedding')" id="linkWeddingPortfolio" class="portfolioLink">
+               <div id="linkWeddingPortfolio" class="portfolioLink wedding">
                   <a href="./portfolio">
                      <div id="weddingPortLink" class="port-link-image"></div>
                      <div class="linkTextBlock"><p> We have a range of wedding packages for every budget, and we love to tailor them to suit your needs.</p></div>
                      <div class="linkTitleCircleCutout"><div class="linkTitleCircle"><h4>Weddings</h4></div></div>
                   </a> 
                </div> 
-               <div onClick="portfolioCategorySet('baby')" id="linkBabyPortfolio" class="portfolioLink">
+               <div id="linkBabyPortfolio" class="portfolioLink baby">
                   <a href="./portfolio">
                      <div id="childrenPortLink" class="port-link-image"></div> 
                      <div class="linkTextBlock"><p> We have several different newborn or child packages to suit every need. </p></div>
                      <div class="linkTitleCircleCutout"><div class="linkTitleCircle"><h4>Children</h4></div></div>
                   </a> 
                </div> 
-               <div onClick="portfolioCategorySet('headshot')" id="linkHeadshotPortfolio" class="portfolioLink">
+               <div id="linkHeadshotPortfolio" class="portfolioLink headshot">
                   <a href="./portfolio">
                      <div id="headshotsPortLink" class="port-link-image"> </div>  
                      <div class="linkTextBlock"><p>We can shoot individuals or small groups in our Newport Photography Studio, for both personal and professional use.</p></div>
                      <div class="linkTitleCircleCutout"><div class="linkTitleCircle"><h4>Headshots</h4></div></div>
                   </a>
                </div> 
-               <div onClick="portfolioCategorySet('special')" id="linkSpecialityPortfolio" class="portfolioLink">
+               <div id="linkSpecialityPortfolio" class="portfolioLink special">
                   <a href="./portfolio">
                      <div id="specialPortLink" class="port-link-image"></div> 
                      <div class="linkTextBlock"><p> We cover most types of Event Photography normally only charging for any images purchased. </p></div>
