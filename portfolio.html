@@ -11,8 +11,7 @@
       <link rel="stylesheet" href="./CSS/magnific-popup.css">
       <script src="https://unpkg.com/scrollreveal"></script>
    </head>
-   <!-- On page load, read current portfolio category variable in cookie, set category. -->
-   <body onload="fetchGalleryImages(readCookie('portfolioCategory'))">
+   <body>
       <header>
          <h1>Oakfield Photography</h1>
 
@@ -34,7 +33,7 @@
             <span></span>
             <ul id="mobileMenu">
               <a href="https://www.oakfield-photography.com/"><li>HOME</li></a>
-              <a onClick="portfolioCategorySet('wedding')" href="./portfolio"><li>PORTFOLIO</li></a>
+              <a href="./portfolio"><li>PORTFOLIO</li></a>
               <a href="./about"><li>ABOUT US</li></a>
               <a href="./pricing"><li>PRICING</li></a>
             </ul>
@@ -44,17 +43,19 @@
       <!-- Portfolio category sort buttons -->
       <div id="content">
          <div id="sort-buttons-container">
-            <button onclick="fetchGalleryImages('wedding')" >Wedding</button>
-            <button onclick="fetchGalleryImages('baby')" >Child & Baby</button>
-            <button onclick="fetchGalleryImages('headshot')">Headshots</button>
-            <button onclick="fetchGalleryImages('special')">Speciality</button>
+            <button class="wedding gal-sort-button" >Wedding</button>
+            <button class="baby gal-sort-button"  >Child & Baby</button>
+            <button class="headshot gal-sort-button"  >Headshots</button>
+            <button class="special gal-sort-button"  >Speciality</button>
          </div>
 
          <!-- Portfolio image gallery container, filled dynamically by code. -->
-         <div class="port-gallery"> </div>
+         <div id="image-gallery">
+
+         </div>   
       </div>
 
-      <!-- FOOTER SECTION -->
+      <!-- FOOTER SECTION --> 
       <footer class="footerSection">
          <div class="contact-details">
             <h4 id="phone"> 01633 546954 || 07845795526</h4>
@@ -67,11 +68,7 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous">
       </script>
-      <script src="./Javascript/script.js"></script>
       <script src="./Javascript/portfolio.js"></script>
-      <script>
-         ScrollReveal().reveal('.galImage');
-      </script>
       <script src="./Javascript/jquery.magnific-popup.min.js"></script>
    </body>
 </html>
