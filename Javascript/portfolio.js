@@ -40,7 +40,6 @@ fetchGalleryImages = (category) => {
    })
    .then(response => response.json())
    .then(data => {
-      console.log(data);
       let imageElement = '';
       data.resources.forEach(element => {
          imageElement += `<a href="${element.secure_url}"class="popup-link gal-image-link" ><img class="gal-image" src="${element.secure_url}" /></a>`
