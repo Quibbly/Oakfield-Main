@@ -1,27 +1,25 @@
-function scrollDown() {
-   document.body.scrollTop = 0; // For Safari
+let portfolioLinkButtons = document.querySelectorAll('.portfolioLink');
 
-   if(screen.width>=3840)
-   {
-      document.documentElement.scrollTop = 2100; // For Chrome, Firefox, IE and Opera
+// On portfolio link click, set localstore to selected portfolio category.
+portfolioLinkButtons.forEach(function(item,index){
+   if(item.classList.contains('wedding')){
+      item.addEventListener("click", function(){
+         localStorage.setItem('portfolio', 'wedding');
+      })
    }
-   else if(screen.width>=2560)
-   {
-      document.documentElement.scrollTop = 1400; // For Chrome, Firefox, IE and Opera
+   else if(item.classList.contains('baby')){
+      item.addEventListener("click", function(){
+         localStorage.setItem('portfolio', 'baby');
+      })
    }
-   else if(screen.width>=1920)
-   {
-      document.documentElement.scrollTop = 1020; // For Chrome, Firefox, IE and Opera
+   else if(item.classList.contains('special')){
+      item.addEventListener("click", function(){
+         localStorage.setItem('portfolio', 'special');
+      })
    }
-   else
-   {
-      document.documentElement.scrollTop = 850; // For Chrome, Firefox, IE and Opera
-   }
-
-   
-} 
-
-portfolioCategorySet = (category) => {
-   //localStorage.setItem('storageName',category);
-   document.cookie = 'portfolioCategory='+category+ '; expires= ; path=/; SameSite=None; Secure';
-}
+   else if(item.classList.contains('headshot')){
+      item.addEventListener("click", function(){
+         localStorage.setItem('portfolio', 'headshot');
+      })
+   } 
+})
