@@ -1,140 +1,134 @@
-@import 'components';
-$mobileElementWidth:90%;
+@import "components";
+$mobileElementWidth: 90%;
 
-.mainInfoContainer{
-   width:$mobileWidth;
-   margin: 0 auto;
-   text-align: center;
-   margin-top:50px;
+.mainInfoContainer {
    color: $lightColor;
    font-size: 0.9rem;
+   margin: 50px auto 0;
+   text-align: center;
+   width: $mobileWidth;
 
-   #infoBlockOne{
-      h2{
+   #infoBlockOne {
+      h2 {
          background-color: $primaryColor;
-         margin:0 auto;
-         width:$mobileElementWidth;
-         padding:20px;
+         margin: 0 auto;
+         padding: 20px;
+         width: $mobileElementWidth;
       }
-      span{
-         display: block;
-         width:$mobileElementWidth;
-         padding:20px;
+      span {
          background-color: $lightColor;
          color: $darkColor;
-         margin:0 auto;
+         display: block;
          font-size: 1.15rem;
          font-weight: bold;
+         margin: 0 auto;
+         padding: 20px;
          text-align: left;
-         p{
-            width:80%;
-            padding:30px;
-            margin:0 auto;
+         width: $mobileElementWidth;
+         p {
+            margin: 0 auto;
             max-width: 600px;
+            padding: 30px;
+            width: 80%;
          }
       }
    }
 
-   #infoBlockTwo{
-      h2{
+   #infoBlockTwo {
+      h2 {
          background-color: $primaryColor;
-         margin:0 auto;
-         width:$mobileElementWidth;
-         padding:20px;
-         margin-top:80px;
+         margin: 80px auto 0px auto;
+         padding: 20px;
+         width: $mobileElementWidth;
       }
-      div:first-of-type{
-         margin:0 auto;
-         border-radius: 10px;
-         width:$mobileElementWidth;
-         padding:20px;
+      div:first-of-type {
          background-color: $lightColor;
-         img{
+         border-radius: 10px;
+         margin: 0 auto;
+         padding: 20px;
+         width: $mobileElementWidth;
+         img {
             border-radius: 50px;
-            width:100%;
             max-width: 500px;
+            width: 100%;
          }
       }
-      h3{
+      h3 {
          background-color: $lightColor;
-         width:$mobileElementWidth;
-         padding:20px;
-         margin:0 auto;
          color: $darkColor;
          font-size: 1.4rem;
-         margin-bottom:-20px;
+         margin: 0 auto -20px;
+         padding: 20px;
+         width: $mobileElementWidth;
       }
-      span{
-         display: block;
-         width:$mobileElementWidth;
-         padding:20px;
+      span {
          background-color: $lightColor;
          color: $darkColor;
-         margin:0 auto;
+         display: block;
          font-size: 1.15rem;
          font-weight: bold;
+         margin: 0 auto;
+         padding: 20px;
          text-align: left;
-         p{
-            width:80%;
-            padding:20px;
-            margin:0 auto;
+         width: $mobileElementWidth;
+         p {
+            margin: 0 auto;
             max-width: 600px;
+            padding: 20px;
+            width: 80%;
          }
       }
    }
 
-   #infoBlockThree{
-      h2{
+   #infoBlockThree {
+      h2 {
          background-color: $primaryColor;
-         margin:0 auto;
-         width:$mobileElementWidth;
-         padding:20px;
-         margin-top:80px;
+         margin: 80px auto 0;
+         padding: 20px;
+         width: $mobileElementWidth;
       }
-      span{
-         display: block;
-         width:$mobileElementWidth;
-         padding:20px;
+      span {
          background-color: $lightColor;
          color: $darkColor;
-         margin:0 auto;
+         display: block;
          font-size: 1.15rem;
          font-weight: bold;
+         margin: 0 auto;
+         padding: 20px;
          text-align: center;
-         p{
-            width:80%;
-            padding:20px;
-            margin:0 auto;
+         width: $mobileElementWidth;
+         p {
+            margin: 0 auto;
             max-width: 600px;
+            padding: 20px;
+            width: 80%;
          }
       }
-      iframe{
-         margin-top:80px;
-         width:99%;
-         height:800px;
+      iframe {
+         height: 800px;
+         margin-top: 80px;
+         width: 99%;
       }
    }
 }
 
-nav{
-   li:nth-child(1){
+nav {
+   li:nth-child(1) {
       background-color: $darkColor;
    }
-   li:nth-child(3){
+   li:nth-child(3) {
       background-color: rgba(138, 138, 138, 0.466);
    }
 }
 
 // MEDIA QUERIES
-@media only screen and (min-width:900px) {
-   .mainInfoContainer{
-      width:$desktopWidth;
+@media only screen and (min-width: 900px) {
+   .mainInfoContainer {
+      width: $desktopWidth;
    }
-   iframe{
-      margin-top:80px;
-      width:90%;
-      height:800px;
+   iframe {
+      height: 800px;
+      margin-top: 80px;
+      width: 90%;
    }
 }
-
-

@@ -1,87 +1,79 @@
-@import 'components';
+@import "components";
 
-nav{
-   li:nth-child(1){
+nav {
+   li:nth-child(1) {
       background-color: $darkColor;
    }
-   li:nth-child(4){
+   li:nth-child(4) {
       background-color: rgba(138, 138, 138, 0.466);
    }
 }
 
-footer{
-   margin-top:10%;
+footer {
+   margin-top: 10%;
 }
 
-#main-section{
-   width:100%;
-   margin:0 auto;
+#main-section {
    display: flex;
    flex-direction: column;
-   height:100%;
+   height: 100%;
+   margin: 0 auto;
+   width: 100%;
 
-   .catDivButton{
-      z-index: 2;
-      width:60%;
-
-      margin:0 auto;
+   .catDivButton {
       background-color: $primaryColor;
-      color: $lightColor;
-      border-radius: 5px;
-      max-width: 600px;
-      margin-top:10%;
       border-bottom: 1px solid transparent;
-      transition: all ease-in-out 0.5s;
-      outline:none;
+      border-radius: 5px;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
+      color: $lightColor;
       cursor: pointer;
+      margin: 10% auto 0;
+      max-width: 600px;
+      outline: none;
+      transition: all ease-in-out 0.5s;
+      width: 60%;
+      z-index: 2;
    }
-   .catDivButton:hover{
-      background-color: #EAEAEA;
+   .catDivButton:hover {
+      background-color: #eaeaea;
       color: $darkColor;
    }
-   .catDivContent{
-      margin:0 auto;
-      display:flex;
+   .catDivContent {
+      display: flex;
       flex-direction: column;
-      width:100%;
+      margin: 0 auto;
+      width: 100%;
 
-      .albumCollection{
-         width:85%;
-         margin:0 auto;
-         display:flex;
-         flex-direction: column;
-         margin-top: 50px;
-         margin-bottom: 0px;
+      .albumCollection {
          background-color: $lightColor;
-         padding:20px;
-         padding-bottom:70px;
-         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
          border-radius: 10px;
+         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
+         display: flex;
+         flex-direction: column;
+         margin: 50px auto 0;
+         padding: 20px 0 70px 0;
+         width: 85%;
          span {
-            width: 100%;
-            margin:0 auto;
-            text-align: center;
             font-weight: bold;
-            margin-bottom: 20px;
-            h3{
-               width:100%;
+            margin: 0 auto 20px;
+            text-align: center;
+            width: 100%;
+            h3 {
                font-size: 1.8rem;
+               width: 100%;
             }
-            p{
+            p {
                font-size: 1.1rem;
             }
          }
-         img{
-            max-width:95%;
-
-            margin:0 auto;
-            margin-bottom: 20px;
+         img {
+            margin: 0 auto 20px;
+            max-width: 95%;
          }
-         ul{
-            li{
-               margin-bottom:10px;
+         ul {
+            li {
                font-weight: bold;
+               margin-bottom: 10px;
             }
          }
       }
@@ -94,75 +86,70 @@ footer{
    }
    .headshotsContentHidden {
       display: none;
-   }   
+   }
    .babyContentHidden {
       display: none;
    }
 }
 
-@media only screen and (min-width:900px) {
-   footer{
-      margin-top:10%;
+@media only screen and (min-width: 900px) {
+   footer {
+      margin-top: 10%;
    }
-   #main-section{
-      .catDivButton{
-         width:60%;
-         margin:0 auto;
+   #main-section {
+      .catDivButton {
          background-color: $primaryColor;
-         color: $lightColor;
          border-radius: 5px;
+         color: $lightColor;
+         margin: 3% auto 0;
          max-width: 600px;
-         margin-top:3%;
+         width: 60%;
       }
 
-      .catDivContent{
-         .albumCollection{
-            width:80%;
-            margin:0 auto;
+      .catDivContent {
+         .albumCollection {
             display: grid;
-            grid-auto-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
             gap: 1px 1px;
+            grid-auto-columns: 1fr 1fr;
             grid-template-areas: "span span" "img ul" "img ul";
-            margin-top: 50px;
-            margin-bottom: 0px;
+            grid-template-rows: 1fr 1fr 1fr;
+            margin: 50px auto 0;
             max-width: 900px;
+            width: 80%;
             span {
                grid-area: span;
+               margin: 0 27% 0 0;
                min-width: 150%;
-               margin:0 auto;
-               margin-left:27%;
-               margin-bottom: 0px;
             }
-            img{
+            img {
                grid-area: img;
-               max-width:90%;
-               margin:0 auto;
+               margin: 0 auto;
+               max-width: 90%;
             }
-            ul{
+            ul {
                grid-area: ul;
-               li{
-                  margin-bottom:10px;
+               li {
+                  margin-bottom: 10px;
                }
             }
          }
       }
    }
 }
-@media only screen and (min-width:1400px) {
-   #main-section{
-      .catDivContent{
-         width:70%;
-         display:flex;
+@media only screen and (min-width: 1400px) {
+   #main-section {
+      .catDivContent {
+         display: flex;
          flex-direction: initial;
          flex-wrap: wrap;
-         
-         .albumCollection{
-            width:45%;
-            margin-bottom:-22px;
+         width: 70%;
+
+         .albumCollection {
+            margin-bottom: -22px;
             max-height: 370px;
-            img{
-               max-width:100%;
+            width: 45%;
+            img {
+               max-width: 100%;
             }
          }
       }
@@ -174,7 +161,7 @@ footer{
       }
       .headshotsContentHidden {
          display: none;
-      }   
+      }
       .babyContentHidden {
          display: none;
       }

@@ -1,105 +1,121 @@
-@import 'components'; 
+@import "components";
 
-#sort-buttons-container{
-   margin:0 auto;
+#image-gallery {
+   width:75%;
    display:flex;
-   flex-direction: row;
-   max-width:75%;
-   justify-content: center;
-   margin-top:50px;
-   background-color: $primaryColor;
    flex-wrap: wrap;
+   margin:0 auto;
+   box-sizing: border-box;
+   .gal-image-link {
+      width:25%;
+      height:300px;
+      display:flex;
+   }
+   .gal-image{
+      width:100%;
+      object-fit: cover;
+      object-position: center;
+   }
+}
+
+
+#sort-buttons-container {
+   background-color: $primaryColor;
    border-radius: 10px 10px 0 0;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: 50px auto 0;
+   max-width: 75%;
    button {
-      border-radius: 3px 3px 3px 3px;
-      box-shadow:black;
-      display:block;
-      font-size:0.8rem;
-      font-weight: bold;
-      margin:0.8rem;
-      text-decoration: none;
-      text-align: center;
-      color: $lightColor;
       border-bottom: 1px solid transparent;
-      transition: all ease-in-out 0.5s;
-      height:40px;
-      width:10%;
-      min-width: 100px;
-      max-width: 200px;
-      outline:none;
+      border-radius: 3px 3px 3px 3px;
       border: none;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
+      box-shadow: black;
+      color: $lightColor;
+      display: block;
+      font-size: 0.8rem;
+      font-weight: bold;
+      height: 40px;
+      margin: 0.8rem;
+      max-width: 200px;
+      min-width: 100px;
+      outline: none;
+      text-align: center;
+      text-decoration: none;
+      transition: all ease-in-out 0.5s;
+      width: 10%;
       cursor: pointer;
    }
    button:hover {
-      background-color: #EAEAEA;
+      background-color: #eaeaea;
       color: $darkColor;
-      
    }
    button:active {
       background-color: $darkColor;
    }
 }
-.buttonCurrent{
+.buttonCurrent {
    background-color: $darkColor;
-   display:none
+   display: none;
 }
-.port-gallery{
-   position: relative;
-   left:3px;
-   max-width:75%;
-   margin:0 auto;
-   display:flex;
+.port-gallery {
+   display: flex;
    flex-wrap: wrap;
-   margin-bottom: 100px;
-   .galImageBox{
-      width:100%;
-      max-height:500px;
+   left: 3px;
+   margin: 0 auto 100px;
+   max-width: 75%;
+   position: relative;
+   .galImageBox {
+      margin: 1px;
+      max-height: 500px;
       position: relative;
-      margin:1px;
+      width: 100%;
    }
-   .galImage{
-      width:100%;
-      height:100%;
+   .galImage {
+      height: 100%;
       object-fit: cover;
+      width: 100%;
    }
 }
 .loadingImg {
    opacity: 0;
-   transition: opacity .400s;
+   transition: opacity 0.4s;
 }
 .loadedImg {
    opacity: 1;
-   transition: opacity .400s;
+   transition: opacity 0.4s;
 }
 .removedImg {
    opacity: 0;
 }
-nav{
-   li:nth-child(1){
+nav {
+   li:nth-child(1) {
       background-color: $darkColor;
    }
-   li:nth-child(2){
+   li:nth-child(2) {
       background-color: rgba(138, 138, 138, 0.466);
    }
 }
 
-@media only screen and (min-width:500px) {
-   .port-gallery{
-      width:80%;
-      .galImageBox{
-         width:49%;
+@media only screen and (min-width: 500px) {
+   .port-gallery {
+      width: 80%;
+      .galImageBox {
+         width: 49%;
       }
    }
 }
-@media only screen and (min-width:900px) {
-   .port-gallery{
-      width:80%;
-      .galImageBox{
-         width:33%;
+@media only screen and (min-width: 900px) {
+   .port-gallery {
+      width: 80%;
+      .galImageBox {
+         width: 33%;
       }
    }
-   #sort-buttons-container{
+   #sort-buttons-container {
       flex-wrap: nowrap;
    }
 }
